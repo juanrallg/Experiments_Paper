@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.25)  9 FEB 2018 10:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.25)  9 FEB 2018 13:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -921,7 +921,11 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/home/basore/Documents/Experiments_Paper/Paper_Experiments/build/Experiments_P
-aper_V02.aux)
+aper_V02.aux
+
+LaTeX Warning: Label `fig:Vortex_Sketches' multiply defined.
+
+)
 \openout1 = `Experiments_Paper_V02.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -1038,245 +1042,237 @@ LaTeX Font Info:    Try loading font information for U+wasy on input line 44.
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 \c__siunitx_mathtt_int=\count190
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<Figures/Flow_features_V3_B&W.pdf, id=16, 1357.07pt x 1167.56195pt>
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<Figures/Flow_features_V3_B&W.pdf, id=20, 1357.07pt x 1167.56195pt>
 File: Figures/Flow_features_V3_B&W.pdf Graphic file (type pdf)
 
 <use Figures/Flow_features_V3_B&W.pdf>
-Package pdftex.def Info: Figures/Flow_features_V3_B&W.pdf used on input line 13
+Package pdftex.def Info: Figures/Flow_features_V3_B&W.pdf used on input line 12
 6.
 (pdftex.def)             Requested size: 194.39868pt x 167.25226pt.
+File: Figures/Flow_features_V3_B&W.pdf Graphic file (type pdf)
+ <use Figures/Flow_features_V3_B&W.pdf>
+Package pdftex.def Info: Figures/Flow_features_V3_B&W.pdf used on input line 15
+1.
+(pdftex.def)             Requested size: 194.39868pt x 167.25226pt.
 
-<Figures/AlviSettles_FlowStructure_V5.pdf, id=18, 1461.46pt x 1204.5pt>
+<Figures/AlviSettles_FlowStructure_V5.pdf, id=23, 1461.46pt x 1204.5pt>
 File: Figures/AlviSettles_FlowStructure_V5.pdf Graphic file (type pdf)
 
 <use Figures/AlviSettles_FlowStructure_V5.pdf>
 Package pdftex.def Info: Figures/AlviSettles_FlowStructure_V5.pdf used on input
- line 140.
+ line 155.
 (pdftex.def)             Requested size: 194.39868pt x 160.07623pt.
- [2]
-<Figures/Model_and_zoom.png, id=24, 1491.5725pt x 1075.01625pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/Model_and_zoom.png, id=25, 1491.5725pt x 1075.01625pt>
 File: Figures/Model_and_zoom.png Graphic file (type png)
 
 <use Figures/Model_and_zoom.png>
-Package pdftex.def Info: Figures/Model_and_zoom.png used on input line 153.
+Package pdftex.def Info: Figures/Model_and_zoom.png used on input line 168.
 (pdftex.def)             Requested size: 216.0pt x 155.66832pt.
 
-<Figures/Mounts_Drawing.pdf, id=26, 730.73pt x 626.34pt>
+<Figures/Mounts_Drawing.pdf, id=27, 730.73pt x 626.34pt>
 File: Figures/Mounts_Drawing.pdf Graphic file (type pdf)
 
 <use Figures/Mounts_Drawing.pdf>
-Package pdftex.def Info: Figures/Mounts_Drawing.pdf used on input line 157.
+Package pdftex.def Info: Figures/Mounts_Drawing.pdf used on input line 172.
 (pdftex.def)             Requested size: 172.79736pt x 148.1074pt.
- [3 <./Figures/Flow_features_V3_B&W.pdf> <./Figures/AlviSettles_FlowStructure_V
-5.pdf> <./Figures/Model_and_zoom.png> <./Figures/Mounts_Drawing.pdf
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./Figures/Flow_features_V3_B&W.pdf>] [4 <./Figures/AlviSettles_FlowStructur
+e_V5.pdf> <./Figures/Model_and_zoom.png> <./Figures/Mounts_Drawing.pdf
 
 pdfTeX warning: pdflatex (file ./Figures/Mounts_Drawing.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
->] [4] [5] [6]
-<Figures/TurbKinEnergySlices_csH2Stoich_LowP_LowF_HighInj_fmt_V2.pdf, id=108, 1
+>] [5] [6]
+<Figures/TurbKinEnergySlices_csH2Stoich_LowP_LowF_HighInj_fmt_V2.pdf, id=110, 1
 284.8pt x 1051.93pt>
 File: Figures/TurbKinEnergySlices_csH2Stoich_LowP_LowF_HighInj_fmt_V2.pdf Graph
 ic file (type pdf)
 
 <use Figures/TurbKinEnergySlices_csH2Stoich_LowP_LowF_HighInj_fmt_V2.pdf>
 Package pdftex.def Info: Figures/TurbKinEnergySlices_csH2Stoich_LowP_LowF_HighI
-nj_fmt_V2.pdf used on input line 254.
+nj_fmt_V2.pdf used on input line 269.
 (pdftex.def)             Requested size: 194.39868pt x 159.16309pt.
 
-<Figures/GNUP_LP_CFD-EXP_Comparison.pdf, id=110, 845.1575pt x 597.23125pt>
+<Figures/GNUP_LP_CFD-EXP_Comparison.pdf, id=112, 845.1575pt x 597.23125pt>
 File: Figures/GNUP_LP_CFD-EXP_Comparison.pdf Graphic file (type pdf)
 
 <use Figures/GNUP_LP_CFD-EXP_Comparison.pdf>
 Package pdftex.def Info: Figures/GNUP_LP_CFD-EXP_Comparison.pdf used on input l
-ine 258.
+ine 273.
 (pdftex.def)             Requested size: 233.2771pt x 159.41101pt.
 
-Overfull \hbox (9.00586pt too wide) in paragraph at lines 254--259
+Overfull \hbox (9.00586pt too wide) in paragraph at lines 269--274
  [][] 
  []
 
-[7]
-<Figures/Data/LP_NoI_UF/GNUP_CFD_GaugesLines_Multi.pdf, id=116, 845.1575pt x 59
+[7] [8 <./Figures/TurbKinEnergySlices_csH2Stoich_LowP_LowF_HighInj_fmt_V2.pdf> 
+<./Figures/GNUP_LP_CFD-EXP_Comparison.pdf, page is rotated 90 degrees>]
+<Figures/Data/LP_NoI_UF/GNUP_CFD_GaugesLines_Multi.pdf, id=140, 845.1575pt x 59
 7.23125pt>
 File: Figures/Data/LP_NoI_UF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type 
 pdf)
  <use Figures/Data/LP_NoI_UF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_NoI_UF/GNUP_CFD_GaugesLines_Multi.pdf 
-used on input line 282.
+used on input line 297.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
 
-<Figures/Data/LP_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf, id=118, 845.1575pt x 59
+<Figures/Data/LP_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf, id=142, 845.1575pt x 59
 7.23125pt>
 File: Figures/Data/LP_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type 
 pdf)
  <use Figures/Data/LP_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf 
-used on input line 288.
+used on input line 303.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<Figures/Data/LP_NoI_LF/Post-processed_GaugesQMap.png, id=120, 455.82059pt x 34
+ [9 <./Figures/Data/LP_NoI_UF/GNUP_CFD_GaugesLines_Multi.pdf> <./Figures/Data/L
+P_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf>]
+<Figures/Data/LP_NoI_LF/Post-processed_GaugesQMap.png, id=175, 455.82059pt x 34
 1.3553pt>
 File: Figures/Data/LP_NoI_LF/Post-processed_GaugesQMap.png Graphic file (type p
 ng)
  <use Figures/Data/LP_NoI_LF/Post-processed_GaugesQMap.png>
 Package pdftex.def Info: Figures/Data/LP_NoI_LF/Post-processed_GaugesQMap.png u
-sed on input line 302.
+sed on input line 317.
 (pdftex.def)             Requested size: 216.0pt x 133.57152pt.
 
-<Figures/Data/LP_NoI_LF/Post-processed_CFDB.png, id=122, 455.82059pt x 341.3553
+<Figures/Data/LP_NoI_LF/Post-processed_CFDB.png, id=177, 455.82059pt x 341.3553
 pt>
 File: Figures/Data/LP_NoI_LF/Post-processed_CFDB.png Graphic file (type png)
  <use Figures/Data/LP_NoI_LF/Post-processed_CFDB.png>
 Package pdftex.def Info: Figures/Data/LP_NoI_LF/Post-processed_CFDB.png used on
- input line 307.
+ input line 322.
 (pdftex.def)             Requested size: 237.60132pt x 134.68225pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8 <./Figures/TurbKinEnergySlices_csH2Stoich_LowP_LowF_HighInj_fmt_V2.pdf> <./F
-igures/GNUP_LP_CFD-EXP_Comparison.pdf, page is rotated 90 degrees>]
-<Figures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combined.pdf, id=146, 1858.945pt x 1203
+<Figures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combined.pdf, id=179, 1858.945pt x 1203
 .69695pt>
 File: Figures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combined.pdf Graphic file (type pd
 f)
  <use Figures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combined.pdf>
 Package pdftex.def Info: Figures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combined.pdf us
-ed on input line 319.
+ed on input line 334.
 (pdftex.def)             Requested size: 302.39868pt x 195.79129pt.
- [9 <./Figures/Data/LP_NoI_UF/GNUP_CFD_GaugesLines_Multi.pdf> <./Figures/Data/L
-P_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf>] [10 <./Figures/Data/LP_NoI_LF/Post-pr
-ocessed_GaugesQMap.png> <./Figures/Data/LP_NoI_LF/Post-processed_CFDB.png> <./F
-igures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combined.pdf
-
-pdfTeX warning: pdflatex (file ./Figures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combine
-d.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf, id=229, 845.1575pt x 597
+ [10 <./Figures/Data/LP_NoI_LF/Post-processed_GaugesQMap.png> <./Figures/Data/L
+P_NoI_LF/Post-processed_CFDB.png>] [11 <./Figures/SST-K_X137_LP_NI_UF_Q_and_SST
+k_Combined.pdf>]
+<Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf, id=235, 845.1575pt x 597
 .23125pt>
 File: Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type p
 df)
  <use Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf u
-sed on input line 344.
+sed on input line 359.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png, id=231, 455.82059pt x 341
+<Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png, id=237, 455.82059pt x 341
 .3553pt>
 File: Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png Graphic file (type pn
 g)
  <use Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png>
 Package pdftex.def Info: Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png us
-ed on input line 356.
+ed on input line 371.
 (pdftex.def)             Requested size: 216.0pt x 133.57152pt.
 
-<Figures/Data/LP_HI_UF/Post-processed_CFDB.png, id=233, 455.82059pt x 341.3553p
+<Figures/Data/LP_HI_UF/Post-processed_CFDB.png, id=239, 455.82059pt x 341.3553p
 t>
 File: Figures/Data/LP_HI_UF/Post-processed_CFDB.png Graphic file (type png)
  <use Figures/Data/LP_HI_UF/Post-processed_CFDB.png>
 Package pdftex.def Info: Figures/Data/LP_HI_UF/Post-processed_CFDB.png used on 
-input line 361.
+input line 376.
 (pdftex.def)             Requested size: 237.60132pt x 134.68225pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[11]
-<Figures/Flowfield_Experimental_Vred.pdf, id=239, 1994.65195pt x 1771.41805pt>
+ [12 <./Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf, page is rotated 9
+0 degrees> <./Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png> <./Figures/D
+ata/LP_HI_UF/Post-processed_CFDB.png>]
+<Figures/Flowfield_Experimental_Vred.pdf, id=254, 1994.65195pt x 1771.41805pt>
 File: Figures/Flowfield_Experimental_Vred.pdf Graphic file (type pdf)
 
 <use Figures/Flowfield_Experimental_Vred.pdf>
 Package pdftex.def Info: Figures/Flowfield_Experimental_Vred.pdf used on input 
-line 376.
+line 391.
 (pdftex.def)             Requested size: 410.39868pt x 364.4675pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf, page is rotated 90
- degrees> <./Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png> <./Figures/Da
-ta/LP_HI_UF/Post-processed_CFDB.png>]
-<Figures/Data/LP_LI_UF/GNUP_CFD_GaugesLines_Multi.pdf, id=254, 845.1575pt x 597
+
+<Figures/Data/LP_LI_UF/GNUP_CFD_GaugesLines_Multi.pdf, id=256, 845.1575pt x 597
 .23125pt>
 File: Figures/Data/LP_LI_UF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type p
 df)
  <use Figures/Data/LP_LI_UF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_LI_UF/GNUP_CFD_GaugesLines_Multi.pdf u
-sed on input line 391.
+sed on input line 406.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 <./Figures/Flowfield_Experimental_Vred.pdf>]
-<Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf, id=286, 845.1575pt x 597
+[13] [14 <./Figures/Flowfield_Experimental_Vred.pdf> <./Figures/Data/LP_LI_UF/G
+NUP_CFD_GaugesLines_Multi.pdf, page is rotated 90 degrees>]
+<Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf, id=299, 845.1575pt x 597
 .23125pt>
 File: Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type p
 df)
  <use Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf u
-sed on input line 409.
+sed on input line 424.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf, id=288, 845.1575pt x 597
+<Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf, id=301, 845.1575pt x 597
 .23125pt>
 File: Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type p
 df)
  <use Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf u
-sed on input line 426.
+sed on input line 441.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
- [14 <./Figures/Data/LP_LI_UF/GNUP_CFD_GaugesLines_Multi.pdf, page is rotated 9
-0 degrees>] [15 <./Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf, page i
-s rotated 90 degrees> <./Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf, 
-page is rotated 90 degrees>] [16] [17]
+ [15 <./Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf, page is rotated 9
+0 degrees>] [16 <./Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf, page i
+s rotated 90 degrees>] [17] [18]
 (/home/basore/Documents/Experiments_Paper/Paper_Experiments/build/Experiments_P
-aper_V02.aux) ) 
+aper_V02.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 25862 strings out of 493029
- 519075 string characters out of 6136234
- 517501 words of memory out of 5000000
- 28983 multiletter control sequences out of 15000+600000
+ 25877 strings out of 493029
+ 519663 string characters out of 6136234
+ 519621 words of memory out of 5000000
+ 28998 multiletter control sequences out of 15000+600000
  20457 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,21n,87p,10393b,1126s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfti1000.pfb>
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
+are/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx10
+00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm080
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000
+.pfb>
 Output written on /home/basore/Documents/Experiments_Paper/Paper_Experiments/bu
-ild/Experiments_Paper_V02.pdf (17 pages, 5851460 bytes).
+ild/Experiments_Paper_V02.pdf (18 pages, 5855515 bytes).
 PDF statistics:
- 393 PDF objects out of 1000 (max. 8388607)
- 256 compressed objects within 3 object streams
+ 398 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 

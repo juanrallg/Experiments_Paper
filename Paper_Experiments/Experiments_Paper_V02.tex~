@@ -51,58 +51,71 @@
 
 \begin{abstract}
 
-Air-breathing propulsion is expected to decrease the cost per kilogram for payloads and increase the flexibility of Low Earth Orbit satellite placement.
-However, improvements are required to make this a reality, with a current issue under investigation being the effective fuel-air mixing inside scramjet engines.
-A viable option suggested to address this issue uses vortices intrinsically generated from scramjet inlets to enhance the downstream fuel-air mixture.
-Previous works have studied the vortex-injection interaction numerically, but lack published experimental data in the hypersonic regime for validation. 
-These works focused on a canonical geometry generating scremjet-inlet-like vortices allowing for generic comparisons to be made.
-This paper extends upon these previous works, providing experimental data, and assessing the ability of the numerical methodology to accurately predict the vortex-injection interaction.
 
-For this, an experimental model consisting of a flat plate with a perpendicular compression fin, a porthole injector, and 55 thin-film heat-transfer gauges was tested in the T4 Stalker Tube.
-The experimental data was replicated numerically, allowing verification of the numerical methodology accuracy.
+Air-breathing propulsion is expected to decrease the cost per kilogram for access-to-space while increasing the flexibility of available low earth orbits.
+However, improvements are required in order make this a reality, with one of the current issues under investigation being the effective fuel-air mixing inside of scramjet engines.
+A viable option suggested to address this issue uses the intrinsically generated vortices from scramjet inlets to enhance the downstream fuel-air mixing.
+Previous works have studied this vortex-injection interaction numerically, but the lack of published experimental data in the hypersonic regime made validation impractical.
+This paper extends upon these previous works by providing experimental data for the canonical geometry and assessing the numerical methodology to accurately predict the vortex-injection interaction.
+
+
+To achieve this, an experimental model consisting of a flat plate with a perpendicular compression fin and a porthole injector was tested in the T4 Stalker Tube.
+The experimental data recorded was replicated numerically, allowing for the validation of the numerical methods.
 These results showed a localized overprediction of the heat transfer, attributed to a localized overprediction of the turbulent kinetic energy.
-Nonetheless, good agreement was seen overall between the numerical and experimental data. 
+Nonetheless, a good agreement was seen overall between the numerical and experimental results. 
 
 
 \end{abstract}
 
 \maketitle
 
-%\section*{Nomenclature}
-%(Nomenclature entries should have the units identified)\\
-%\noindent\begin{tabular}{@{}lcl@{}}
-%\textit{A}  &=& amplitude of oscillation \\
-%\textit{a   }&=&    cylinder diameter \\
-%\textit{C}$_{p}$&=& pressure coefficient \\
-%\textit{Cx} &=& force coefficient in the \textit{x} direction \\
-%\textit{Cy} &=& force coefficient in the \textit{y} direction \\
-%c   &=& chord \\
-%d\textit{t} &=& time step \\
-%\textit{Fx} &=& \textit{X} component of the resultant pressure force acting on the vehicle \\
-%\textit{Fy} &=& \textit{Y} component of the resultant pressure force acting on the vehicle \\
-%\textit{f, g}   &=& generic functions \\
-%\textit{h}  &=& height \\
-%\textit{i}  &=& time index during navigation \\
-%\textit{j}  &=& waypoint index \\
-%\textit{K}  &=& trailing-edge (TE) nondimensional angular deflection rate
-%\end{tabular} \\
+% \section*{Nomenclature}
+% (Nomenclature entries should have the units identified)\\
+% \noindent\begin{tabular}{@{}lcl@{}}
+% \textit{A}  &=& amplitude of oscillation \\
+% \textit{a   }&=&    cylinder diameter \\
+% \textit{C}$_{p}$&=& pressure coefficient \\
+% \textit{Cx} &=& force coefficient in the \textit{x} direction \\
+% \textit{Cy} &=& force coefficient in the \textit{y} direction \\
+% c   &=& chord \\
+% d\textit{t} &=& time step \\
+% \textit{Fx} &=& \textit{X} component of the resultant pressure force acting on the vehicle \\
+% \textit{Fy} &=& \textit{Y} component of the resultant pressure force acting on the vehicle \\
+% \textit{f, g}   &=& generic functions \\
+% \textit{h}  &=& height \\
+% \textit{i}  &=& time index during navigation \\
+% \textit{j}  &=& waypoint index \\
+% \textit{K}  &=& trailing-edge (TE) nondimensional angular deflection rate
+% \end{tabular} \\
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-By removing the requirement of carrying oxidizer to combust the fuel, air-breathing propulsion  has significant advantage over rockets, providing a higher theoretical specific impulse, efficiency, and payload mass fraction~\cite{SmartTetlow,CookHueter}.
-For these reasons, efficiency of low earth orbit satellite placement missions can be improved by using scramjet propulsion.
+By removing the requirement of having to carry the propellant oxidizer, air-breathing propulsion has significant theoretical advantages over rockets.
+These advantages include, a higher specific impulse, efficiency, and payload mass fraction~\cite{SmartTetlow,CookHueter}.
+For these reasons, using air-breathing propulsion for access-to-space missions has the potential to increase the overall efficiency as well as decrease the cost per kilogram of placing satellites into orbit.
+% efficiency of low earth orbit satellite placement missions can be improved by using scramjet propulsion.
+However, several aspects of scramjet technology still require substantial improvements prior to scramjet propulsion for access-to-space being considered operational.
+The extremely short residence times to mix and burn the fuel within these engines is one of the main challenges.
+% Mixing and burning the fuel within the extremely short residence times in these engines is one of the main challenges.
+% KDB: Wasn't sure if you meant an decrease in the total propulsive efficiency as this may increase with an inreased combustion efficiency. I would  double check this statement.
+A previously suggested strategy to enhance mixing while incurring a minimal total loss increase, is to use the vortices intrinsically generated by scramjet inlets.
+% KDB: I can't access the UQ library so you will need to verify my edits associated with the referenced papers.
+Non-axisymmetric inlets inherently generate vortices due to the Shock-Wave Boundary-Layer Interactions (SWBLI) present~\cite{Alvi} and have been shown to produce improvements in mixing~\cite{SpacePlanes_paper2015,Llobet_PlumeElongation}.
+% KDB: Please verify that this is correct. I'm going from memory about your paper
+Llobet et al.~\cite{Llobet_PlumeElongation} was able to show, using a RANS computational fluid dynamics (CFD) study, that by injecting into an approximated inlet sidewall SWBLI vortex, the resulting fuel plume and mixing rate were able to be advantageously altered.
+% These vortices have been shown to produce relevant
+% A previous work~\cite{Llobet_PlumeElongation} used RANS computational fluid dynamics (CFD) to study the vortex-injection interaction, focusing on its effect on fuel plume shape and its influence in mixing rate. 
+% KDB: This needs a reference the way that I've altered it now. Just change it if you don't have any good ones lying around.
+% KDB: I put full-scale as I'm guessing you approximated the full flight scale model and not the 3/4 that they usually run in the tunnel. Change this if need be.
+The vortices in this study were generated using a canonical geometry consisting of a flat plate and a compression wall, which was previously shown to generate vortices representative of those found in full-scale scramjet flowfields [\textbf{ref}].
+This geometry is replicated in this experiment to provide experimental data as a validation benchmark against the numerical studies previously published on this topic.
+These experiments were carried out in the T4 Stalker Tube at the University of Queensland (UQ).
 
-However, several aspects of scramjet technology still require a substantial improvement prior to rendering scramjet propulsion technology for access to space operational.
-Mixing and burning the fuel within the extremely short residence times in these engines is one of the main challenges.
-A previously suggested strategy to enhance mixing rates while incurring in minimal increase in total loses is the use of vortices intrinsically generated in scramjet inlets.
-Non-axisymmetric scramjet engines inherently generate vortices due to shock-wave boundary-layer interactions~\cite{Alvi}. 
-These vortices have been shown to produce relevant improvement in mixing rates~\cite{SpacePlanes_paper2015,Llobet_PlumeElongation}.
-A previous work by Llobet and Jahn~\cite{Llobet_PlumeElongation} used RANS computational fluid dynamics (CFD) to study the vortex-injection interaction, focusing on its effect on fuel plume shape and its influence in mixing rate. 
-These vortices were genereated using a canonical geometry consisting of a flat plate and compression wall, which was previously shown to generate vortices representative of those found in real scramjet flowfields.
-sThis geometry is replicated in this experimental study to provide experimental data and a validation benchmark to assess the validity of numerical studies on this topic.
-The experiments are carried out in the T4 reflected shock tunnel at the University of Queensland (UQ).
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{T4 Reflected Shock Tunnel}
 	\label{sec:T4Literature}
 	

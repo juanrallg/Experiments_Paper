@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.25)  9 FEB 2018 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.25)  9 FEB 2018 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,7 +1048,7 @@ nverted-to.pdf>
 (epstopdf)                    size: 98105 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/T4_Shock_Tunnel_Lu
 ke_D_2013-eps-converted-to.pdf Figures/T4_Shock_Tunnel_Luke_D_2013.eps>
-(epstopdf)             \includegraphics on input line 126.
+(epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
 
 <Figures/T4_Shock_Tunnel_Luke_D_2013-eps-converted-to.pdf, id=20, 441.65pt x 10
@@ -1057,7 +1057,7 @@ File: Figures/T4_Shock_Tunnel_Luke_D_2013-eps-converted-to.pdf Graphic file (ty
 pe pdf)
  <use Figures/T4_Shock_Tunnel_Luke_D_2013-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/T4_Shock_Tunnel_Luke_D_2013-eps-converted-to.p
-df used on input line 126.
+df used on input line 125.
 (pdftex.def)             Requested size: 388.79736pt x 91.01802pt.
 
 <Figures/Flow_features_V3_B&W.pdf, id=22, 1357.07pt x 1167.56195pt>
@@ -1081,14 +1081,14 @@ w_features_V3_B&W.pdf> <./Figures/AlviSettles_FlowStructure_V5.pdf>]
 File: Figures/Model_and_zoom.png Graphic file (type png)
 
 <use Figures/Model_and_zoom.png>
-Package pdftex.def Info: Figures/Model_and_zoom.png used on input line 161.
+Package pdftex.def Info: Figures/Model_and_zoom.png used on input line 162.
 (pdftex.def)             Requested size: 216.0pt x 155.66832pt.
 
 <Figures/Mounts_Drawing.pdf, id=88, 730.73pt x 626.34pt>
 File: Figures/Mounts_Drawing.pdf Graphic file (type pdf)
 
 <use Figures/Mounts_Drawing.pdf>
-Package pdftex.def Info: Figures/Mounts_Drawing.pdf used on input line 165.
+Package pdftex.def Info: Figures/Mounts_Drawing.pdf used on input line 166.
 (pdftex.def)             Requested size: 172.79736pt x 148.1074pt.
  [4 <./Figures/Model_and_zoom.png> <./Figures/Mounts_Drawing.pdf>] [5] [6]
 <Figures/TurbKinEnergySlices_csH2Stoich_LowP_LowF_HighInj_fmt_V2.pdf, id=114, 1
@@ -1098,7 +1098,7 @@ ic file (type pdf)
 
 <use Figures/TurbKinEnergySlices_csH2Stoich_LowP_LowF_HighInj_fmt_V2.pdf>
 Package pdftex.def Info: Figures/TurbKinEnergySlices_csH2Stoich_LowP_LowF_HighI
-nj_fmt_V2.pdf used on input line 262.
+nj_fmt_V2.pdf used on input line 299.
 (pdftex.def)             Requested size: 194.39868pt x 159.16309pt.
 
 <Figures/GNUP_LP_CFD-EXP_Comparison.pdf, id=116, 845.1575pt x 597.23125pt>
@@ -1106,10 +1106,10 @@ File: Figures/GNUP_LP_CFD-EXP_Comparison.pdf Graphic file (type pdf)
 
 <use Figures/GNUP_LP_CFD-EXP_Comparison.pdf>
 Package pdftex.def Info: Figures/GNUP_LP_CFD-EXP_Comparison.pdf used on input l
-ine 266.
+ine 303.
 (pdftex.def)             Requested size: 233.2771pt x 159.41101pt.
 
-Overfull \hbox (9.00586pt too wide) in paragraph at lines 262--267
+Overfull \hbox (9.00586pt too wide) in paragraph at lines 299--304
  [][] 
  []
 
@@ -1121,7 +1121,7 @@ File: Figures/Data/LP_NoI_UF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type
 pdf)
  <use Figures/Data/LP_NoI_UF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_NoI_UF/GNUP_CFD_GaugesLines_Multi.pdf 
-used on input line 290.
+used on input line 327.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
 
 <Figures/Data/LP_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf, id=146, 845.1575pt x 59
@@ -1130,7 +1130,7 @@ File: Figures/Data/LP_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type
 pdf)
  <use Figures/Data/LP_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf 
-used on input line 296.
+used on input line 333.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
  [9 <./Figures/Data/LP_NoI_UF/GNUP_CFD_GaugesLines_Multi.pdf> <./Figures/Data/L
 P_NoI_LF/GNUP_CFD_GaugesLines_Multi.pdf>]
@@ -1140,7 +1140,7 @@ File: Figures/Data/LP_NoI_LF/Post-processed_GaugesQMap.png Graphic file (type p
 ng)
  <use Figures/Data/LP_NoI_LF/Post-processed_GaugesQMap.png>
 Package pdftex.def Info: Figures/Data/LP_NoI_LF/Post-processed_GaugesQMap.png u
-sed on input line 310.
+sed on input line 347.
 (pdftex.def)             Requested size: 216.0pt x 133.57152pt.
 
 <Figures/Data/LP_NoI_LF/Post-processed_CFDB.png, id=181, 455.82059pt x 341.3553
@@ -1148,7 +1148,7 @@ pt>
 File: Figures/Data/LP_NoI_LF/Post-processed_CFDB.png Graphic file (type png)
  <use Figures/Data/LP_NoI_LF/Post-processed_CFDB.png>
 Package pdftex.def Info: Figures/Data/LP_NoI_LF/Post-processed_CFDB.png used on
- input line 315.
+ input line 352.
 (pdftex.def)             Requested size: 237.60132pt x 134.68225pt.
 
 <Figures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combined.pdf, id=183, 1858.945pt x 1203
@@ -1157,7 +1157,7 @@ File: Figures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combined.pdf Graphic file (type pd
 f)
  <use Figures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combined.pdf>
 Package pdftex.def Info: Figures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combined.pdf us
-ed on input line 327.
+ed on input line 364.
 (pdftex.def)             Requested size: 302.39868pt x 195.79129pt.
  [10 <./Figures/Data/LP_NoI_LF/Post-processed_GaugesQMap.png> <./Figures/Data/L
 P_NoI_LF/Post-processed_CFDB.png>] [11 <./Figures/SST-K_X137_LP_NI_UF_Q_and_SST
@@ -1168,7 +1168,7 @@ File: Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type p
 df)
  <use Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf u
-sed on input line 352.
+sed on input line 389.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
 
 <Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png, id=241, 455.82059pt x 341
@@ -1177,7 +1177,7 @@ File: Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png Graphic file (type pn
 g)
  <use Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png>
 Package pdftex.def Info: Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png us
-ed on input line 364.
+ed on input line 401.
 (pdftex.def)             Requested size: 216.0pt x 133.57152pt.
 
 <Figures/Data/LP_HI_UF/Post-processed_CFDB.png, id=243, 455.82059pt x 341.3553p
@@ -1185,7 +1185,7 @@ t>
 File: Figures/Data/LP_HI_UF/Post-processed_CFDB.png Graphic file (type png)
  <use Figures/Data/LP_HI_UF/Post-processed_CFDB.png>
 Package pdftex.def Info: Figures/Data/LP_HI_UF/Post-processed_CFDB.png used on 
-input line 369.
+input line 406.
 (pdftex.def)             Requested size: 237.60132pt x 134.68225pt.
  [12 <./Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf, page is rotated 9
 0 degrees> <./Figures/Data/LP_HI_UF/Post-processed_GaugesQMap.png> <./Figures/D
@@ -1195,7 +1195,7 @@ File: Figures/Flowfield_Experimental_Vred.pdf Graphic file (type pdf)
 
 <use Figures/Flowfield_Experimental_Vred.pdf>
 Package pdftex.def Info: Figures/Flowfield_Experimental_Vred.pdf used on input 
-line 384.
+line 421.
 (pdftex.def)             Requested size: 410.39868pt x 364.4675pt.
 
 
@@ -1208,7 +1208,7 @@ File: Figures/Data/LP_LI_UF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type p
 df)
  <use Figures/Data/LP_LI_UF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_LI_UF/GNUP_CFD_GaugesLines_Multi.pdf u
-sed on input line 399.
+sed on input line 436.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
 
 
@@ -1222,7 +1222,7 @@ File: Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type p
 df)
  <use Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf u
-sed on input line 417.
+sed on input line 454.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
 
 <Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf, id=305, 845.1575pt x 597
@@ -1231,7 +1231,7 @@ File: Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf Graphic file (type p
 df)
  <use Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf>
 Package pdftex.def Info: Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf u
-sed on input line 434.
+sed on input line 471.
 (pdftex.def)             Requested size: 259.20264pt x 173.32367pt.
  [15 <./Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf, page is rotated 9
 0 degrees>] [16 <./Figures/Data/LP_LI_LF/GNUP_CFD_GaugesLines_Multi.pdf, page i
@@ -1266,7 +1266,7 @@ super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb><
 ts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfti1000.pfb>
 Output written on /home/basore/Documents/Experiments_Paper/Paper_Experiments/bu
-ild/Experiments_Paper_V02.pdf (18 pages, 5953447 bytes).
+ild/Experiments_Paper_V02.pdf (18 pages, 5953448 bytes).
 PDF statistics:
  402 PDF objects out of 1000 (max. 8388607)
  263 compressed objects within 3 object streams

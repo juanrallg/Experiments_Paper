@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.25)  9 FEB 2018 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.25)  9 FEB 2018 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1040,11 +1040,11 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 \c__siunitx_mathtt_int=\count190
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 Package epstopdf Info: Source file: <Figures/T4_Shock_Tunnel_Luke_D_2013.eps>
-(epstopdf)                    date: 2014-11-23 19:23:02
+(epstopdf)                    date: 2018-02-09 15:21:52
 (epstopdf)                    size: 1160495 bytes
 (epstopdf)             Output file: <Figures/T4_Shock_Tunnel_Luke_D_2013-eps-co
 nverted-to.pdf>
-(epstopdf)                    date: 2018-02-09 14:44:09
+(epstopdf)                    date: 2018-02-09 15:21:52
 (epstopdf)                    size: 98105 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/T4_Shock_Tunnel_Lu
 ke_D_2013-eps-converted-to.pdf Figures/T4_Shock_Tunnel_Luke_D_2013.eps>
@@ -1266,7 +1266,7 @@ super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb><
 ts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfti1000.pfb>
 Output written on /home/basore/Documents/Experiments_Paper/Paper_Experiments/bu
-ild/Experiments_Paper_V02.pdf (18 pages, 5953454 bytes).
+ild/Experiments_Paper_V02.pdf (18 pages, 5953447 bytes).
 PDF statistics:
  402 PDF objects out of 1000 (max. 8388607)
  263 compressed objects within 3 object streams

@@ -210,17 +210,27 @@ Shown in Fig. \textbf{blah}, by varying this translation distance (\textbf{min-m
 
 \vspace{11 pt}
 
+The Thin-Film Heat-transfer Gauges (TFHG) in the model were arranged in five parallel lines as shown in the subset of Fig.\ref{fig:ModelPicture}.
+% Heat transfer measurements were obtained along five lines perpendicular to the axial direction.
+Each of the gauge lines contains 11 TFHGs that were manufactured at the Centre for Hypersonics. % instrumentation laboratory.
+% Data on each line is acquired using eleven thin film heat transfer gauges.
+% The thin films used in this experimental campaign were manufactured at the Centre for Hypersonics instrumentation laboratory.
+These gauges are made using an $\approx$\SI{20}{\nano\meter} nickel strip resistive element that is sputtered onto an optically smooth quartz substrate.
+Shielded with a layer of $SiO_2$, the gauges are individually calibrated after manufacturing ~\cite{Wise_Thesis}.
+From this the heat flux into the wall can be calculated using the integrated measured change in the gauge voltage from the constant current circuit.
+% KDB: I feel this needs a linking sentence but I don't really know how at the moment.
+Shown in Eq.~\ref{eq:TFHG_Heat}, from~\cite{Wise_Thesis,Schultz_Book}, where $\rho c k_T$ is the properties of the substrate and $\alpha_R$ is the resistance-independent calibrated TFHG sensitivity.
 
-Heat transfer measurements were obtained along five lines perpendicular to the axial direction.
-Data on each line is acquired using eleven thin film heat transfer gauges (TFHG).
-The thin films used in this experimental campaign were manufactured at the Centre for Hypersonics instrumentation laboratory.
-The metallic film is a \SI{20}{\nano\meter} Nickel strip.
-The film is sputtered onto an optically smooth quartz substrate~\cite{Wise_Thesis}.
-Nickel was chosen for its high temperature coefficient.
-The properties of Quartz vary very little with temperature, making it a good material for the substrate.
-In addition, these gauges are shielded with a layer of $SiO_2$, reducing the wear of the film and avoiding possible short-circuits through an ionized flow~\cite{Wise_Thesis}.
-The sensitivity of the gauges is calculated at the end of the manufacture process.
-The heat flux to the wall can be calculated using Eq.~\ref{eq:TFHG_Heat}, from~\cite{Wise_Thesis,Schultz_Book}, where $\rho c k_T$ are the properties of the substrate, and $\alpha_R$ is the TFHG sensitivity.
+
+% KDB: I don't think you need to justify why we use Nickel and quartz. Not the point of your paper.
+
+% The metallic film is a \SI{20}{\nano\meter} Nickel strip.
+% The film is sputtered onto an optically smooth quartz substrate~\cite{Wise_Thesis}.
+% Nickel was chosen for its high temperature coefficient.
+% The properties of quartz vary very little with temperature, making it a good material for the substrate.
+% In addition, these gauges are shielded with a layer of $SiO_2$, reducing the wear of the film and avoiding possible short-circuits through an ionized flow~\cite{Wise_Thesis}.
+% The sensitivity of the gauges is calculated at the end of the manufacture process.
+% The heat flux to the wall can be calculated using Eq.~\ref{eq:TFHG_Heat}, from~\cite{Wise_Thesis,Schultz_Book}, where $\rho c k_T$ are the properties of the substrate, and $\alpha_R$ is the TFHG sensitivity.
 
 
 \begin{equation}
@@ -229,10 +239,14 @@ The heat flux to the wall can be calculated using Eq.~\ref{eq:TFHG_Heat}, from~\
 \end{equation}
 
 
-The gauges had to be mounted in close proximity to each other to provide the resolution required to reconstruct the heat transfer profile across the injection-vortex interaction region.
-The centers of the TFHG are separated $\SI{4}{\milli\meter}$ in the spanwise direction, while the lines are $\SI{24.15}{\milli\meter}$ apart in the axial direction.
-Moreover, the lines have a \SI{4.47}{\milli\meter} offset between mounts in the spanwise direction as can be observed in Fig.~\ref{fig:GaugesonModel}.
+
+Shown in Fig.~\ref{fig:GaugesonModel}, in order to appropriately resolve the heat-transfer profile across the injection-vortex interaction, the gauges had to be mounted in close proximity.
+The centers of the gauges are separated by $\SI{4}{\milli\meter}$ in the Y axis, while the lines are separated by $\SI{24}{\milli\meter}$ in the X axis (or freestream direction).
+Moreover, the gauge lines have a \SI{4.5}{\milli\meter} offset in the positive Y in order to improve the sensor coverage.
 The first TFHG line is $\SI{12}{\milli\meter}$ downstream of the injector.
+
+
+\hfill\newline
 
 
 Additionally, the model incorporates six thin film heat transfer gauges along the flat plate.
@@ -248,6 +262,9 @@ The boundary layer was found to remain laminar for the test conditions.
 Two pressure tabs on the flat plate surface incorporating kulite pressure transducers were used to ascertain the pressure of the freestream.
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{T4 test flow conditions}
 
 The experiments were performed using the T4 Mach 7.6 nozzle and Mach 8 enthalpy conditions.

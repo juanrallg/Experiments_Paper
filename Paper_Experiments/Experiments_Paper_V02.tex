@@ -191,22 +191,17 @@ The width of the model/plate is $\SI{220}{\milli\meter}$ and was selected to red
 % KDB: 3 sig figs should be fine for this.
 % KDB: Probably need to ref the studies again here with the way I've structured it.
 The length of flat plate upstream of the fin leading edge was limited to $\SI{156}{\milli\meter}$ due to the potential interference with the tunnel nozzle walls.
-The location of the fin and injector were adapted for the experimental testing, when compared to the previous numerical configuration[\textbf{ref}], to accommodate the optical constraints of the T4 test section.
+The location of the fin and injector were adapted for the experimental testing, when compared to the previous numerical configuration, to accommodate the optical constraints of the T4 test section.
 % KDB: Please verify it's diameter for the injector
-The $\SI{1}{\milli\meter}$ diameter injector was located \textbf{blah} mm downstream of the plate leading edge at a $\SI{45}{\deg}$ angle relative to the freestream flow.
+The $\SI{1}{\milli\meter}$ diameter injector was located $\SI{126}{\milli\meter}$ downstream of the fin leading edge at a $\SI{45}{\deg}$ angle relative to the freestream flow.
 % KDB: This needs a simple diagram. I think a top down wireframe with an arrow drawn for the translation would suffice. Nothing crazy.
 % KDB: I think you need to define the range it could translate as well in here and probably the resulting Y/X boundary layer heights from the wall. Or something equivalent.
+Shown in Fig.~\ref{fig:GaugesonModel}, the fin can be translated in the model Y axis
+which allows for different vortex injection locations to be examined. 
 
-The fin can be translated in the model Y axis to allow different fin-to-injector distance ratios.
-Shown in Fig.~\ref{fig:GaugesonModel}, by translating the fin, the relative injector position in the Y axis changes, allowing for different injection locations in the vortex to be tested. 
+% The fin can be translated in the model Y axis to allow for different fin-to-injector distance ratios to be tested.
+% Shown in Fig.~\ref{fig:GaugesonModel}, by translating the fin, this allows for different injection locations in the vortex to be examined.
 
-
-% allows for the injector to move in the relative Y/X axis, as shown in Fig.~\ref{fig:Alvi_Sketch}
-
-
-% , varying the location of the injector within the vortex.
-
-\vspace{11 pt}
 
 The Thin-Film Heat-transfer Gauges (TFHG) in the model were arranged in five parallel lines as shown in the subset of Fig.\ref{fig:ModelPicture}.
 % Heat transfer measurements were obtained along five lines perpendicular to the axial direction.
@@ -215,9 +210,9 @@ Each of the gauge lines contains 11 TFHGs that were manufactured at the Centre f
 % The thin films used in this experimental campaign were manufactured at the Centre for Hypersonics instrumentation laboratory.
 These gauges are made using an $\approx$\SI{20}{\nano\meter} nickel resistive strip element that is sputtered onto an optically smooth quartz substrate.
 Shielded with a layer of $SiO_2$, the gauges are individually calibrated after manufacturing ~\cite{Wise_Thesis}.
-From this the heat flux into the wall can be calculated using the integrated measured change in the gauge voltage from the constant current circuit.
+Once integrated into the experimental model, the heat flux can be calculated using the integrated measured change in the TFHG voltage from a constant current circuit.
 % KDB: I feel this needs a linking sentence but I don't really know how at the moment.
-Shown in Eq.~\ref{eq:TFHG_Heat}, from~\cite{Wise_Thesis,Schultz_Book}, where $\rho c k_T$ is the properties of the substrate and $\alpha_R$ is the resistance-independent calibrated TFHG sensitivity.
+This calculation is shown in Eq.~\ref{eq:TFHG_Heat}, from~\cite{Wise_Thesis,Schultz_Book}, where $\rho c k_T$ is the properties of the substrate and $\alpha_R$ is the resistance-independent calibrated TFHG sensitivity.
 
 
 % KDB: I don't think you need to justify why we use Nickel and quartz. Not the point of your paper.
@@ -237,14 +232,14 @@ Shown in Eq.~\ref{eq:TFHG_Heat}, from~\cite{Wise_Thesis,Schultz_Book}, where $\r
 \end{equation}
 
 
-Figure~\ref{fig:GaugesonModel} shows the TFHG sensor field that was required in order to appropriately resolve the heat-transfer profile across the injection-vortex interaction.
+
+Figure~\ref{fig:GaugesonModel} also shows the TFHG sensor field that was required in order to appropriately resolve the heat-transfer profile across the injection-vortex interaction.
 %  the gauges had to be mounted in close proximity.
 The centers of the gauges are separated by $\SI{4}{\milli\meter}$ in the Y axis, while the lines are separated by $\SI{24}{\milli\meter}$ in the X axis (or freestream direction).
-Moreover, the gauge lines have a \SI{4.5}{\milli\meter} offset in the positive Y in order to improve the sensor coverage.
+Moreover, the gauge lines have a \SI{4.5}{\milli\meter} offset in the positive Y direction in order to improve the sensor coverage.
 The first TFHG line is $\SI{12}{\milli\meter}$ downstream of the injector.
 
 
-\hfill\newline
 
 Additionally, the model incorporates six thin film heat transfer gauges along the flat plate.
 These are used to identify the turbulent state of the flow in the vicinity of the fin leading edge and injector vicinity.

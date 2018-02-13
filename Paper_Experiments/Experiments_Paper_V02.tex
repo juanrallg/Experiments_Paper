@@ -259,14 +259,15 @@ Two pressure tabs on the flat plate surface incorporating kulite pressure transd
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{T4 test flow conditions}
 
-The experiments were performed using the T4 Mach 7.6 nozzle and Mach 8 enthalpy conditions.
-The flow conditions at the nozzle exit are derived from measurements of the shock tube fill pressure $\left(P_{ST}\right)$, shock tube shock speed $\left(V_{S}\right)$, Shock tube temperature $\left(T_{ST}\right)$, and nozzle supply pressure $\left(P_e\right)$.
-Moreover, the transition onset location on the T4 nozzle wall surface is required.
-The length at which transition takes place is unknown.
-For this reason, a parametric study was performed, varying this parameter until the static pressure at the nozzle exit closely matched the experimental pressure measured on the flat plate.
+The experiments were performed using the T4 Mach 7.6 nozzle at a Mach 8 flight-enthalpy.
+The nozzle exit flow conditions are derived from measurements of the shock tube fill pressure $\left(P_{ST}\right)$, shock tube shock-speed $\left(V_{S}\right)$, shock tube temperature $\left(T_{ST}\right)$, and the stagnation region nozzle supply pressure $\left(P_e\right)$.
+Shown in Table~\ref{tab:Exper_Flow_Cond} is the calculated nozzle exit values tabulated along with their uncertainties.
 
-The nozzle exit values are tabulated along with their uncertainties in Table~\ref{tab:Exper_Flow_Cond}.
-%
+% The nozzle exit values are tabulated along with their uncertainties in Table~\ref{tab:Exper_Flow_Cond}.
+
+
+% KDB: Changing this to 3 sig figs
+
 \begin{table}[!h]
 \centering
 \caption{Nominal conditions during testing a nozzle exit.}
@@ -274,11 +275,11 @@ The nozzle exit values are tabulated along with their uncertainties in Table~\re
 \begin{tabular}{rl|rl}
 \multicolumn{2}{c|}{Variable} & \multicolumn{2}{c}{Value}\\
 \hline
-\Gape[0.2cm][0.0cm]{$P_0$} & $[\SI{}{\mega\pascal}]$		& $15.74$ 	& $\pm 4.42\%$ \\
+\Gape[0.2cm][0.0cm]{$P_0$} & $[\SI{}{\mega\pascal}]$		& $15.7$ 	& $\pm 4.42\%$ \\
 $P_\infty$ 		& $[\SI{}{\kilo\pascal}]$				& $2.29$ 	& $\pm 4.53\%$  \\
-$T_\infty$ 		& $[\SI{}{\kelvin}]$						& $237.24$ 	& $\pm 7.37\%$ \\
+$T_\infty$ 		& $[\SI{}{\kelvin}]$						& $237$ 	& $\pm 7.37\%$ \\
 $\rho_\infty$	& $[\SI{}{\kilo\gram\per\cubic\meter}]$	& $0.0335$ 	& $\pm 6.97\%$ \\
-$u_\infty$ 		& $[\SI{}{\meter\per\second}]$			& $2342.23$	& $\pm 2.98\%$ \\
+$u_\infty$ 		& $[\SI{}{\meter\per\second}]$			& $2340$	& $\pm 2.98\%$ \\
 $M_\infty$ 		& $[-]$									& $7.57$ 	& $\pm 0.70\%$ \\           
 $H_0$ 			& $[\SI{}{\mega\joule\per\kilo\gram}]$	& $2.73$ 	& $\pm 7.10\%$ \\          
 \hline
@@ -286,18 +287,43 @@ $H_0$ 			& $[\SI{}{\mega\joule\per\kilo\gram}]$	& $2.73$ 	& $\pm 7.10\%$ \\
 \end{table}
 
 
-The nozzle exit values Table~\ref{tab:Exper_Flow_Cond} are calculated using using NENZFr.
-NENZFr~\cite{nenzfr_manual} is a set of scripts that coordinate a space-marched nozzle simulation in the CFD code Eilmer3, developed at University of Queensland.
-Eilmer3 is a collection of programs simulating 2-D/3-D Navier-Stokes transient compressible flow~\cite{Eilmer_TheoryBook,Eilmer3UserGuide}.
-It is specialized in solving accurately the flow in reflected shock tunnels and expansion shock tunnels.
-The equations are solved using an upwind scheme.
-Moreover, it calculates thermochemistry and finite-rate chemistry processes within the flowfield. 
+The nozzle exit conditions shown in Table~\ref{tab:Exper_Flow_Cond} are calculated using the in-house code NENZFr from the University of Queensland~\cite{nenzfr_manual}.
+NENZFr is a wrapper that integrates an ESTCj(\textbf{[ref]}) shock-tube simulation into a space-marched thermal non-equilibrium Eilmer3 CFD simulation of the nozzle.
+Eilmer3 is a collection of programs simulating 2-D/3-D thermal and chemical non-equilibrium transient Navier-Stokes that is also developed at the University of  ~\cite{Eilmer_TheoryBook,Eilmer3UserGuide}.
 
-The grid used in the nozzle calculation is a 2-D grid, constructed by inscribing a uniform structured grid between a Bezier curve defining the nozzle wall and the axis of the nozzle.
+
+The antisymmetric grid used for the space-marched Eilmer3 simulation is constructed by inscribing a uniform structured grid between a Bezier curve defining the nozzle wall and the nozzle centerline.
 The mesh employed in this study consisted of 600 by 40 elements in the axial and radial directions respectively.
-The chemical composition of the gas is calculated using finite-rate reactions with a five species gas model: $N_2$, $O_2$, NO, N and O.
-The thermodynamic properties are obtained using the NASA CEA2 program~\cite{CEA2,Eilmer_TheoryBook}.
+The chemical composition of the gas is calculated using finite-rate reactions with a five species air model: $N_2$, $O_2$, $NO$, $N$ and $O$.
+The thermodynamic properties are obtained using NASA CEA2~\cite{CEA2,Eilmer_TheoryBook}.
+
+
+% KDB: Luke uses a 100% for the transiiton location. His condition comes out to about -0.63 which with an assumed 1% for the kulites this should be true.
+Moreover, to improve the accuracy of the nozzle exit conditions an iterative convergence was applied to the transition location in the nozzle.
+The baseline predictive value was iterated upon until a satisfactory convergence was found with the experimentally measured static pressure on the plate.
+The uncertainty of this measurement is lower than the resultant sensitivity from the nozzle transition location, and thus is considered a truth value target for the iterative convergence\cite{Doherty:PhD_Thesis_Scram_M10}.
+
+
+
+% KDB: Remove all this once you're happy with my edits. I changed a lot... :/
+
+
+% the transition onset location on the T4 nozzle wall surface is required.
+% The length at which transition takes place is unknown.
+% For this reason, a parametric study was performed, varying this parameter until the static pressure at the nozzle exit closely matched the experimental pressure measured on the flat plate.
+
+% The equations are solved using an upwind scheme.
+
+% The code has been specifically tailored to accurately the flow in reflected shock tunnels and expansion shock tunnels.
+
+% The nozzle exit values in Table~\ref{tab:Exper_Flow_Cond} are calculated using NENZFr.
+% NENZFr~\cite{nenzfr_manual} is a set of scripts that coordinate a space-marched nozzle simulation in the CFD code Eilmer3, developed at University of Queensland.
+% Eilmer3 is a collection of programs simulating 2-D/3-D Navier-Stokes transient compressible flow~\cite{Eilmer_TheoryBook,Eilmer3UserGuide}.
+% It is specialized in solving accurately the flow in reflected shock tunnels and expansion shock tunnels.
+% The equations are solved using an upwind scheme.
+% Moreover, it calculates thermochemistry and finite-rate chemistry processes within the flowfield. 
  
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Test cases}

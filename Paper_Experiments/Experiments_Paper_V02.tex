@@ -375,10 +375,15 @@ All of these parameters were combined to produce six different test cases as sum
 \section{CFD reference results}
 \label{sec:CFDReferenceRes}
 
-The data obtained in the experiments is complemented with numerical simulations to enhance the understanding of the results, and assess the validity of the numerical methodology.
-The numerical domain spans from $\SI{10}{\milli\meter}$ upstream of the fin leading edge, to $\SI{300}{\milli\meter}$ downstream, and $\SI{200}{\milli\meter}$ in the spanwise direction.
-The boundary layer development over the first $\SI{145.5}{\milli\meter}$ of flat plate upstream of the fin leading edge is calculated on a separated quasi 2-D simulation with an infinitely sharp leading edge, and used as the inflow for the main 3-D flow calculations.
-The 3-D mesh size is approximately 4 million cells. Within the injector vicinity, the cells size is approximately $\SI{0.05}{\milli\meter}$, expanding up to $\SI{1}{\milli\meter}$ in the region of uniform flow, far from the vortex-injection interaction.
+The data obtained in the experiments is complemented with numerical simulations to enhance the understanding of the results and assess the validity of the numerical methodology.
+The numerical domain used spans from $\SI{10}{\milli\meter}$ upstream to $\SI{300}{\milli\meter}$ downstream of the fin leading edge and $\SI{200}{\milli\meter}$ centered around the injector centroid in the spanwise direction.
+The boundary layer development over the first $\SI{146}{\milli\meter}$ of flat plate upstream of the fin leading edge was calculated in a separate quasi two-dimensional simulation with an infinitely sharp leading edge. 
+The resulting exit profile from this simulation was input as an infinite plane input into the three-dimensional numerical domain described above.
+% KDB: Probably want to check my statement on this one mate.
+%, and used as the inflow for the main 3-D flow calculations.
+
+The 3-D mesh size is approximately four million cells.
+Within the injector vicinity, the cells size is approximately $\SI{0.05}{\milli\meter}$, expanding up to $\SI{1}{\milli\meter}$ in the region of uniform flow, far from the vortex-injection interaction.
 The injector is placed at $X=\SI{125}{\milli\meter}$ downstream of the fin leading edge to match the experimental model.
 In the spanwise direction, the injector is placed at $Y=\SI{26.2}{\milli\meter}$ from the fin leading edge in the Upper fin position case, and $Y=\SI{35.2}{\milli\meter}$ in the Lower fin position.
 The walls are modeled as constant temperature non-slip walls, with a temperature of $\SI{300}{\kelvin}$. 

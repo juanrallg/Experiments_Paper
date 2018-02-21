@@ -289,10 +289,10 @@ $H_0$ 			& $[\SI{}{\mega\joule\per\kilo\gram}]$	& $2.73$ 	& $\pm 7.10\%$ \\
 
 The nozzle exit conditions shown in Table~\ref{tab:Exper_Flow_Cond} are calculated using the in-house code NENZFr from the University of Queensland~\cite{nenzfr_manual}.
 NENZFr is a wrapper that integrates an ESTCj(\textbf{[ref]}) shock-tube simulation into a space-marched thermal non-equilibrium Eilmer3 CFD simulation of the nozzle.
-Eilmer3 is a collection of programs simulating 2-D/3-D thermal and chemical non-equilibrium transient Navier-Stokes that is also developed at the University of  ~\cite{Eilmer_TheoryBook,Eilmer3UserGuide}.
+Eilmer3 is a collection of programs simulating 2-D/3-D thermal and chemical non-equilibrium transient Navier-Stokes that is also developed at the University of  Queensland~\cite{Eilmer_TheoryBook,Eilmer3UserGuide}.
 
 
-The antisymmetric grid used for the space-marched Eilmer3 simulation is constructed by inscribing a uniform structured grid between a Bezier curve defining the nozzle wall and the nozzle centerline.
+The axisymmetric grid used for the space-marched Eilmer3 simulation is constructed by inscribing a uniform structured grid between a Bezier curve defining the nozzle wall and the nozzle centerline.
 The mesh employed in this study consisted of 600 by 40 elements in the axial and radial directions respectively.
 The chemical composition of the gas is calculated using finite-rate reactions with a five species air model: $N_2$, $O_2$, $NO$, $N$ and $O$.
 The thermodynamic properties are obtained using NASA CEA2~\cite{CEA2,Eilmer_TheoryBook}.
@@ -328,11 +328,17 @@ The uncertainty of this measurement is lower than the resultant sensitivity from
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Test cases}
 
-Two fin locations measured as the minimum spanwise distance between the fin and the injector center with respect to the injector are used. These correspond to fin-to-injector distances of $\SI{26.2}{\milli\meter}$ and $\SI{35.2}{\milli\meter}$, and are named upper fin (UF), and lower fin (LF) positions respectively.
+Two fin locations measured as the minimum spanwise distance between the fin and the injector center with respect to the injector are used.
+These correspond to fin-to-injector distances of $\SI{26.2}{\milli\meter}$ and $\SI{35.2}{\milli\meter}$, and are named upper fin (UF), and lower fin (LF) positions respectively.
 
-Hydrogen fuel is injected through a \SI{1}{\milli\meter} diameter injector inclined \ang{45} in the axial direction. Injection pressure is maintained constant during the test time using a Ludwieg tube. The injection pressures used are $P_{inj}=\SI{1300}{\kilo\pascal}$ and $P_{inj}=\SI{430}{\kilo\pascal}$, which are named high injection pressure (HI) and low injection pressure (LI) respectively. These pressures produce an injection-to-freestream injection momentum ratio of $5.24$, and $1.73$ respectively.  The case with no injection (NI) is used to obtain heat flux data of the undisturbed vortex.
-These parameters are combined to produce 6 different test cases summarized in Table~\ref{tab:T4_Test_Cases} .
+Hydrogen fuel is injected through a \SI{1}{\milli\meter} diameter injector inclined \ang{45} in the axial direction.
+Injection pressure is maintained constant during the test time using a Ludwieg tube.
+The injection pressures used are $P_{inj}=\SI{1300}{\kilo\pascal}$ and $P_{inj}=\SI{430}{\kilo\pascal}$, which are named high injection pressure (HI) and low injection pressure (LI) respectively.
+These pressures produce an injection-to-freestream injection momentum ratio of $5.24$, and $1.73$ respectively.
+The case with no injection (NI) is used to obtain heat flux data of the undisturbed vortex.
+These parameters are combined to produce 6 different test cases summarized in Table~\ref{tab:T4_Test_Cases}.
 		
+
 \begin{table}[!h]
 \centering
 \caption{Combination of injection pressure and fin position for the different test cases.}
@@ -352,6 +358,7 @@ These parameters are combined to produce 6 different test cases summarized in Ta
 \end{table}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{CFD reference results}
 \label{sec:CFDReferenceRes}
 
@@ -378,6 +385,8 @@ The main 3-D simulations of the flat plate plus fin are performed with the SST $
 \end{figure} 
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 
 The experimental and numerical data obtained is presented in this section. The case with no injection is presented first, followed by the study of the vortex-injection cases.
@@ -442,7 +451,6 @@ The limitation of the numerical model to accurately simulate heat flux near the 
 This region of severe heat flux overprediction in the numerical data will be referred as `numerical overestimation zone'.
 
 %%%%%%%%%%%%%%%%%%%%
-
 
 
 \subsection{Fuel vortex interaction}

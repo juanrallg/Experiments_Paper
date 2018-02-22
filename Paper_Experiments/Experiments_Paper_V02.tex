@@ -377,27 +377,42 @@ All of these parameters were combined to produce six different test cases as sum
 
 The data obtained in the experiments is complemented with numerical simulations to enhance the understanding of the results and assess the validity of the numerical methodology.
 The numerical domain used spans from $\SI{10}{\milli\meter}$ upstream to $\SI{300}{\milli\meter}$ downstream of the fin leading edge and $\SI{200}{\milli\meter}$ centered around the injector centroid in the spanwise direction.
-The boundary layer development over the first $\SI{146}{\milli\meter}$ of flat plate upstream of the fin leading edge was calculated in a separate quasi two-dimensional simulation with an infinitely sharp leading edge. 
-The resulting exit profile from this simulation was input as an infinite plane input into the three-dimensional numerical domain described above.
+The boundary layer development over the first $\SI{146}{\milli\meter}$ of the flat plate upstream of the fin leading edge was calculated in a separate quasi two-dimensional simulation with an infinitely sharp leading edge. 
+The resulting exit profile from this simulation was input as an infinite plane into the three-dimensional numerical domain described above.
 % KDB: Probably want to check my statement on this one mate.
 %, and used as the inflow for the main 3-D flow calculations.
 
-The 3-D mesh size is approximately four million cells.
-Within the injector vicinity, the cells size is approximately $\SI{0.05}{\milli\meter}$, expanding up to $\SI{1}{\milli\meter}$ in the region of uniform flow, far from the vortex-injection interaction.
-The injector is placed at $X=\SI{125}{\milli\meter}$ downstream of the fin leading edge to match the experimental model.
-In the spanwise direction, the injector is placed at $Y=\SI{26.2}{\milli\meter}$ from the fin leading edge in the Upper fin position case, and $Y=\SI{35.2}{\milli\meter}$ in the Lower fin position.
-The walls are modeled as constant temperature non-slip walls, with a temperature of $\SI{300}{\kelvin}$. 
+% KDB: I'm assuming that this was structured for US3D?
 
-The inflow conditions for this simulation are the nominal conditions at the nozzle exit in Table~\ref{tab:Exper_Flow_Cond}.
-As transition is only anticipated downstream of the oblique shock and injector, the pseudo-2D simulations are performed as fully laminar. 
-The main 3-D simulations of the flat plate plus fin are performed with the SST $k-\omega$ model to allow turbulent mixing of the fuel, and production of turbulence in the boundary layer region separated by the fin shock.
-To achieve this, the turbulence parameters are incorporated to the laminar inflow data with a value of zero at the domain inflow.
-In this manner, the laminar nature of the flow in the experiments is replicated for most of the flat plate in the numerical simulations.
-Most importantly, the combination of the laminar inflow with the SST $k-\omega$ model computation produces an effectively laminar boundary layer interaction with the fin shock, while allowing the generation of turbulence in the separation and injection regions.
-This can be observed in Fig.~\ref{fig:TurbKinEn_CFD_SliceLow}.
-The turbulent kinetic energy remains almost negligible in the initial part of the domain, and only starts growing rapidly slightly downstream of the injector region.
-Thanks to the delayed onset of turbulent kinetic energy growth, the flow relevant for the region of interest remains laminar until its separation, qualitatively representing the turbulence state of the flow in the experimental case.
-The good agreement between the numerical and experimental flow conditions in the fully laminar region is depicted in Fig~\ref{fig:Exp_Num_Q}.
+The structured three-dimensional domain contained approximately four million cells and had a minimum spacing around the injector of approximately $\SI{0.05}{\milli\meter}$.
+The cell growth from the injector was restricted to $\SI{1}{\milli\meter}$ in the region of uniform flow and was considered a far-field approximation from the vortex-injection interaction.
+% Within the injector vicinity, the cells size is approximately $\SI{0.05}{\milli\meter}$, expanding up to $\SI{1}{\milli\meter}$ in the region of uniform flow, far from the vortex-injection interaction.
+Inside the numerical domain, the injector was placed at $X=\SI{125}{\milli\meter}$ downstream of the fin leading edge and 26.2 and 35.2 fin-to-injector distances ratios in order to match the experiments.
+% KDB: I'm unsure about this grammar usage but just rolling with it for now. 
+The walls were modeled as non-slip isothermal with a temperature at $\SI{300}{\kelvin}$ --- the mean for the lab in which the experiments were conducted. 
+% The injector in the numerical domain was placed at $X=\SI{125}{\milli\meter}$ downstream of the fin leading edge in order to match the experiments.
+% In the spanwise direction, the injector is placed at $Y=\SI{26.2}{\milli\meter}$ from the fin leading edge in the UF case, and $Y=\SI{35.2}{\milli\meter}$ in the LF case.
+
+
+The inflow conditions used for the simulations are the nominal conditions calculated at the nozzle exit in Table~\ref{tab:Exper_Flow_Cond}.
+Using the transition predictions for the T4 tunnel from He and Morgan[\textbf{ref}], the plate was expected to stay fully laminar upstream of the oblique shock and injector.
+% KDB: Take this out if you want. I would recommned keeping the He and Morgan reference though
+Thus, the pseudo-2D simulations were conducted as fully laminar and no boundary layer parabolic stability transition prediction was used.
+% As transition is only anticipated downstream of the oblique shock and injector, the pseudo-2D simulations are performed as fully laminar. 
+
+% The main three-dimensional simulations of the flat plate plus fin are performed with the
+The turbulence model used was an SST $k-\omega$ to allow for a more accurate turbulent mixing of the fuel and the production of turbulence in the boundary layer region separated by the fin shock.
+In order to accommodate the laminar inflow from the quasi-2D simulation, the 3D domain inflow Turbulent Kinetic Energy (TKE) was set to zero.
+% To achieve this, the turbulence parameters are incorporated to the laminar inflow data with a value of zero at the domain inflow.
+By setting this value to zero, the laminar nature of the flow upstream of the fin, as seen in the experiments, was able to be replicated for most of the flat plate.
+More importantly, using a zero TKE inflow with the SST $k-\omega$, allowed for an appropriate modeling of the viscous turbulence generation in the laminar boundary layer interaction with the fin shock as well as the separations and injection-vortex interaction.
+% the combination of the laminar inflow with the SST $k-\omega$ model computation produces an effectively laminar boundary layer interaction with the fin shock, while allowing the generation of turbulence in the separation and injection regions.
+This TKE generation can be seen in Fig.~\ref{fig:TurbKinEn_CFD_SliceLow} with the one dimensional extraction slice taken along the line displayed in the figure.
+% , as taken from the slice in Fig.~\ref{fig:TurbKinEn_CFD_SliceLow}.
+Examining this subset extraction in Fig.~\ref{fig:TurbKinEn_CFD_SliceLow}, the TKE remains almost negligible in the initial part of the domain until a rapid onset just downstream of the injector.
+Thanks to the delayed onset of TKE growth, the flow relevant for the region of interest remains laminar until its separation, qualitatively representing the turbulent state of the flow in the experiments.
+The good agreement between the numerical and experimental results for the laminar region can be seen in Fig.~\ref{fig:Exp_Num_Q}.
+% The good agreement between the numerical and experimental flow conditions in the fully laminar region is depicted in Fig~\ref{fig:Exp_Num_Q}.
 
 
 \begin{figure}[!h]
@@ -422,7 +437,6 @@ The good agreement between the numerical and experimental flow conditions in the
 The experimental and numerical data obtained is presented in this section. The case with no injection is presented first, followed by the study of the vortex-injection cases.
 
 %%%%%%%%%%%%%%%%%%%%
-
 \subsection{Unfueled vortex}
 
 Two tests using the the Upper and Lower fin positions with no injection were performed to identify the effect of the vortex on heat flux, and the ability of the numerical methodology to accurately simulate this flowfield.
@@ -480,9 +494,8 @@ The vortex flowfield contains a separation and a reattachment line. The reattach
 The limitation of the numerical model to accurately simulate heat flux near the fin shock is a key aspect to take into account when comparing the numerical and experimental results for the fueled cases. 
 This region of severe heat flux overprediction in the numerical data will be referred as `numerical overestimation zone'.
 
+
 %%%%%%%%%%%%%%%%%%%%
-
-
 \subsection{Fuel vortex interaction}
 
 The results obtained for the tests using the Upper and Lower fin positions in combination with the high and low injection pressures (cases 1-4 in Table~\ref{tab:T4_Test_Cases}) provide data on the complex vortex-injection interaction flow field.

@@ -434,15 +434,17 @@ The good agreement between the numerical and experimental results for the lamina
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 
-The experimental and numerical data obtained is presented in this section.
-The case with no injection is presented first, followed by the study of the vortex-injection cases.
+The experimental and numerical results for the six tests cases outlined in Table~\ref{tab:T4_Test_Cases} is presented here.
+The no injection case will be presented first to outline the baseline interaction, followed by the vortex-injection cases and how these different scenarios influenced the flowfield.
 
 %%%%%%%%%%%%%%%%%%%%
 \subsection{Unfueled vortex}
 
-Two tests using the the Upper and Lower fin positions with no injection were performed to identify the effect of the vortex on heat flux, and the ability of the numerical methodology to accurately simulate this flowfield.
+Two baseline cases using the UF and LF positions with no injection were performed to identify the effect that the induced vortex had on the TFHGs in the experiment and to show how well the numerical methodology was able to accurately simulate the flowfield.
+Shown in Fig.~\ref{fig:HeatFluxVortex_Lines}, the numerical simulation heat-flux slices presented are aligned with the TFHG mounts in the experimental model to allow for a more accurate comparison.
 
-The experimental data along the lines formed by the gauges on each mount are presented in Fig.~\ref{fig:LP-NI-UF_LinesPlots} and Fig.~\ref{fig:LP-NI-LF_LinesPlots} for the Upper and Lower fin positions respectively.
+% in the experimental model.
+% The experimental data along the lines formed by the TFHG on each mount are presented in Fig.~\ref{fig:LP-NI-UF_LinesPlots} and Fig.~\ref{fig:LP-NI-LF_LinesPlots} for the upper and lower fin positions respectively.
 
 
 %LP_NoI_UF
@@ -465,12 +467,17 @@ The experimental data along the lines formed by the gauges on each mount are pre
 \end{figure} 
 
 
-The right hand side of the curves in both figures shows a relatively accurate match between the heat flux in the experimental and numerical cases.
-However, in the region closest to the fin shock (Low Y values), the heat flux is highly overestimated in the numerical results.
-This overestimation is consistent for all lines.
-Moreover, the Upper fin case presents a more prominent mismatch in this region.
-The region of numerically overestimated heat flux lies in the region closer to the fin shock.
-This can be seen in Fig.~\ref{fig:HeatFluxNILF}, which presents a mapped version of the data in Fig.~\ref{fig:LP-NI-LF_LinesPlots} along with the equivalent numerical data map.
+Subsets Fig.~\ref{fig:LP-NI-UF_LinesPlots} and Fig.~\ref{fig:LP-NI-LF_LinesPlots} are separated out into the different upper and lower fin positions respectively.
+For both cases, the further you traverse in the spanwise direction away from the oblique shock, in general, the better the agreement.
+% The right hand side of the curves in both figures shows a relatively good agreement
+% between the heat flux in the experimental and numerical results.
+However, in the region closest to the fin (defined as low Y values), the heat flux is overestimated in the numerical results.
+This overestimation is consistent across the entire comparable domain ie. for the gauge lines that were tested on the experimental model.
+% KDB: Please verify this is what you were talking about. I thought this needed more explantion.
+Moreover, for the UF case, as you move downstream from the fin leading edge (examining the lines in increasing alphabetical order), the TFHG results appear to have an approximate inverse relationship near the fin wall to the presented numerical results.
+% presents a more prominent mismatch in this region.
+% The region of numerically overestimated heat flux lies in the region closer to the fin shock.
+
 
 
 \begin{figure}[!h]
@@ -491,19 +498,24 @@ This can be seen in Fig.~\ref{fig:HeatFluxNILF}, which presents a mapped version
 \end{figure} 
 
 
-In the Lower fin position case, the fin is placed further from the gauge data acquisition region.
-Therefore, a smaller part of the numerically overpredicted heat flux region is measured experimentally, reducing the discrepancy within the measurement region.
 
-
-The vortex flowfield contains a separation and a reattachment line.
-The reattachment takes place behind the fin shock, driving hot and dense shock processed gas towards the flat plate, as observed in Fig~\ref{fig:Alvi_Sketch} marked as 'jet'.
-This reattachment takes place in the region of numerically overestimated heat flux. 
-Assuming the temperature of the gas and its composition after being processed by the fin shock are accurately predicted numerically, the overestimation of heat flux seems to be caused by an overestimation of the turbulence intensity in the reattachment region.
-This can be observed in Fig.~\ref{fig:SSTk_Q_Combi}.
-This figure shows line A from the Upper fin case (Fig.~\ref{fig:LP-NI-UF_LinesPlots}) combined with the turbulent kinetic energy at the same axial location extracted from the numerical data.
-The location where the numerical overestimation becomes severe is coincident with the start of a region of high turbulent kinetic energy adjacent to the flat plate surface.
-The detail image in Fig.~\ref{fig:SSTk_Q_Combi} clearly shows this region.
-The coincidence between the overestimation area with the high turbulent kinetic energy adjacent to the flat plate suggests the turbulence model is overpredicting turbulence and thus heat flux in this region.
+Figure~\ref{fig:HeatFluxNILF} presents an extrapolated mapped version of the experimental data along with the equivalent numerical comparison for the LF case.
+In this position, the fin is placed further from the TFHGs and therefore, a smaller part of the numerical heat-flux is overpredicted within the measurement region.
+% heat flux region is measured experimentally, reducing the discrepancy within the measurement region.
+% in Fig.~\ref{fig:LP-NI-LF_LinesPlots} along with the equivalent numerical data map.
+% In the Lower fin position case, the fin is placed further from the gauge data acquisition region.
+% Therefore, a smaller part of the numerically overpredicted heat flux region is measured experimentally, reducing the discrepancy within the measurement region.
+% The vortex flowfield contains a separation and a reattachment line.
+Also, shown on the  figure is the vortex flowfield separation and reattachment lines.
+The reattachment takes place behind the fin shock, driving hot and dense shock compressed gas towards the flat plate, as labeled in Fig.~\ref{fig:Alvi_Sketch} as 'jet'.
+This reattachment takes place in the region close to the fin where the numerical simulations over predict the heat flux.
+%  of numerically overestimated heat flux. 
+% Assuming the temperature of the gas and its composition after being processed by the fin shock are accurately predicted numerically, the overestimation of heat flux seems to be caused by an overestimation of the turbulence intensity in the reattachment region.
+Assuming that the viscous shock process is accurately modeled, the overestimation of the heat flux is predicted to be caused by an overestimation of the turbulence intensity in the region.
+This can be observed in Fig.~\ref{fig:SSTk_Q_Combi} which shows line A from the UF case (Fig.~\ref{fig:LP-NI-UF_LinesPlots}) combined with the TKE from the same axial location.
+The point where the numerical estimation begins to diverge from the experimental results, as shown on the figure, is coincident with an increase in the level of TKE adjacent to the model surface.
+The blown up image in Fig.~\ref{fig:SSTk_Q_Combi} shows a better representation of this elevated region.
+What this region suggests is that the turbulence model is overpredicting the level of turbulence, and thus the heat flux into the wall.
 
 
 %
@@ -515,9 +527,10 @@ The coincidence between the overestimation area with the high turbulent kinetic 
 \end{figure} 
 
 
+This discrepancy created by the numerical solver being unable to accurately simulate the heat flux near the fin shock is a key aspect to take into account when comparing the numerical and experimental data from the fueled results. 
+This region of heat flux overestimation will be referred to as the `numerical overestimation zone'.
 
-The limitation of the numerical model to accurately simulate heat flux near the fin shock is a key aspect to take into account when comparing the numerical and experimental results for the fueled cases. 
-This region of severe heat flux overprediction in the numerical data will be referred as `numerical overestimation zone'.
+\textbf{KB up to here}
 
 
 %%%%%%%%%%%%%%%%%%%%

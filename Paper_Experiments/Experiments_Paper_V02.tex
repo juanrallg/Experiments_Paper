@@ -435,7 +435,7 @@ The good agreement between the numerical and experimental results for the lamina
 \section{Results}
 
 The experimental and numerical results for the six tests cases outlined in Table~\ref{tab:T4_Test_Cases} is presented here.
-The no injection case will be presented first to outline the baseline interaction, followed by the vortex-injection cases and how these different scenarios influenced the flowfield.
+The no injection case will be presented first to outline the baseline interaction followed by the vortex-injection cases and how these different scenarios influenced the flowfield.
 
 %%%%%%%%%%%%%%%%%%%%
 \subsection{Unfueled vortex}
@@ -534,18 +534,18 @@ This region of overestimation will be referred to as the `numerical overestimati
 %%%%%%%%%%%%%%%%%%%%
 \subsection{Fuel vortex interaction}
 
-The results obtained for the tests using the UF and LF positions in combination with the high and low injection pressures (cases 1-4 in Table~\ref{tab:T4_Test_Cases}) provide some initial data on the complex vortex-injection interaction flowfield.
+The results obtained for the tests using the UF and LF positions in combination with the high and low injection pressures (cases 3-6 in Table~\ref{tab:T4_Test_Cases}) provide some initial data on the complex vortex-injection interaction flowfield.
 
-
+%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Upper fin position, High injection pressure}
 
 Both the experimental and numerical results for the high injection pressure UF case are presented in Fig.~\ref{fig:HeatFluxLPHIUF}.
-Qualitatively, there is a good agreement between the numerical and experimental results away from the fin wall.
+Qualitatively, there is a good agreement between the numerical and experimental results far away from the fin wall.
 The two curves have similar trends, and the heat flux peak induced by the injection bow shock was able to be simulated numerically.
-However, the numerical heat flux values near the fin (low Y values) are again overestimated when compared compared to the experimental results.
+However, the numerical heat flux values near the fin (low Y values) are again overestimated when compared to the experimental results.
 % Moreover, the similarity between the numerical and experimental heat flux values is very satisfactory except in the region closest to the fin shock (low Y values).
 % Near the fin shock, the numerical heat flux shows an important overestimation.
-Again, this is caused by the presence of the `numerical overestimation zone' previously outlined for the no injection case.
+This overestimation is caused by the presence of the `numerical overestimation zone' previously outlined for the NI case.
 % KDB: I removed this as it just seems to be repeating yourself. By all means put it back in if I missed something.
 % As seen in Fig.~\ref{fig:SSTk_Q_Combi}, the turbulent kinetic energy adjacent to the flat plate wall, near the fin shock, tends to be overestimated.
 % This not only affects the regions unaffected by the injection bow shock, but also contributes to increase the value of the peaks within this region, as can be seen in Line A. 
@@ -578,7 +578,7 @@ Again, this is caused by the presence of the `numerical overestimation zone' pre
 \end{figure} 
 
 
-
+%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Flowfield description from numerical data}
 
 The numerical solution presents an interesting heat flux distribution on the flat plate consisting of a strip of elevated levels running approximately longitudinally down the center of the vortex.
@@ -588,11 +588,11 @@ This elevated strip is coupled with a neighboring decreased heat flux strip, bot
 Where Fig.~\ref{fig:Exper_Flowf} presents the three-dimensional numerical data showing the vortex-injection interaction. 
 
 
-Shown in Fig.~\ref{fig:Exper_Flowf}a is the evolution of the flow upstream of the injector, to far downstream the plate.
-The fuel plume begins being nearly hemispheric and evolves to a highly elongated profile as you traverse downstream. 
-Far downstream, the fuel plume splits in two regions, one located within the vortex recirculation region, and the other adjacent to the flat plate.
+Figure~\ref{fig:Exper_Flowf}a displays the evolution of the flow upstream of the injector to the far-field downstream on the plate.
+The fuel plume begins with a nearly hemispheric shape and evolves to a highly elongated profile. 
+Far downstream, the fuel plume splits into two regions, one located within the vortex recirculation region, and the other adjacent to the flat plate wall.
 This region of interest is presented in more detail in Fig.~\ref{fig:Exper_Flowf}b.
-In this figure, the streak lines on the flat plate surface show the elevated and decreased heat flux strips are coincident with the separation and reattachment of the flow.
+In this figure, the streak lines on the model surface show the elevated and decreased heat flux strips are coincident with the separation and reattachment of the flow.
 These two stream lines (separation and reattachment) are linked to a counter rotating vortex shown in in Fig.~\ref{fig:Exper_Flowf}c, marked as `C.R. vortex'.
 % This vortex is shown in Fig.~\ref{fig:Exper_Flowf}c, marked as `C.R. vortex'.
 
@@ -606,16 +606,18 @@ These two stream lines (separation and reattachment) are linked to a counter rot
 \end{figure} 
 
 
-Despite the previously heat flux overestimation (shown for the NI case), the ability of the numerical methodology to accurately predict the location and extent of the counter-rotating vortex within the main separation vortex indicates that the macro structures of the 3D flowfield were able to be correctly modeled.
+Despite the previous heat flux overestimation (shown for the NI case), the ability of the numerical method to accurately predict the location and extent of the counter-rotating vortex within the main separation indicates that the macro structures of the 3D flowfield were able to be correctly modeled.
 
 
+%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Upper fin position, Low injection pressure}
 
-The case with low injection pressure shows very similar results to the high injection case. 
-The location of the heat flux peaks is again very well predicted numerically.
-Moreover, the region far from the fin shock shows fairly good agreement in heat flux level.
-This can be observed in Fig.~\ref{fig:HeatFluxLPLIUF}
-
+The LI-UF case ended up having similar results to the HI-UF case. 
+Shown in Fig.~\ref{fig:HeatFluxLPLIUF}, the heat flux peaks are again well predicted and the region away from the fin shock resulted in a good agreement.
+Despite these similarities, the low injection case exhibits a larger discrepancy between the numerical and experimental data in the `numerical overestimation zone'. 
+% This can be observed in Fig.~\ref{fig:HeatFluxLPLIUF}
+% numerically.
+% Moreover, the region far from the fin shock shows fairly good agreement in heat flux level.
 
 %LP_LI_UF
 \begin{figure}[!h]
@@ -627,23 +629,27 @@ This can be observed in Fig.~\ref{fig:HeatFluxLPLIUF}
 %
 
 
-Despite the similarities between the low and high injection cases, the low injection case shows a larger discrepancy between numerical and experimental data in the `numerical overestimation zone'. 
+For the HI-UF, the injection bow shock has a larger influence the on heat flux, helping to decrease the level of intrinsic error experienced from the `numerical overestimation zone'.
+In the LI-UF case shown in Fig.~\ref{fig:HeatFluxLPLIUF}, the lower injection pressure makes the numerical error in the `numerical overestimation zone' more influential on the final results.
+This is especially true in lines A and E.
+In Line A, the left hand side peak is clearly overestimated due to its proximity to the fin and in Line E, the effect of the injection bow shock dissipation is underestimated when compared with the experimental results.
+% incrementing the discrepancy between the lines due to effect of the `numerical overestimation zone'.
 
-
-In the high injection pressure case (HI-UF), the injection bow shock has a larger effect on heat flux, helping to mask the intrinsic error produced near the fin shock.
-In this case (LI-UF), the lower injection pressure makes the numerical error in the `numerical overestimation zone' more apparent.
-This is specially visible in lines A and E. In Line A, the left hand side peak is clearly overestimated due to its proximity to the fin shock.
-In Line E, the effect of the injection bow shock is substantially dissipated, incrementing the discrepancy between the lines due to effect of the `numerical overestimation zone'.
-
-
+%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Lower fin position, High injection pressure}
 
 The heat flux results for the high injection pressure, low fin position (HI-LF) are presented in Fig.~\ref{fig:HeatFluxLPHILF}.
-These lines show very good agreement across the whole domain.
-This case shows a better agreement between the numerical and experimental data than the case with the Upper fin position.
-As previously described, the fin shock in the Lower fin position is further from the data acquisition region.
-Thus, a smaller area of the `numerical overestimation zone' is affecting the measurements. 
-This improvement is specially visible in Line A, where the experimental data points even for the left hand side peak lie very close to the numerical data line.
+These lines presented show a better agreement than the previous cases across the entire domain.
+% This case shows a better agreement between the numerical and experimental data than the case with the Upper fin position.
+As previously described, the fin shock in the LF position is further from the experimental data acquisition region.
+Thus, a smaller spatial area of the `numerical overestimation zone' influences the results. 
+This improvement in the correlation between the two results is particularly visible in Line A.
+In this line, the experimental data points, even for the values close to the fin wall, are generally within the experimental uncertainty of TFHG readings.
+Not only are the location and trend of the heat flux peaks captured, but the heat flux values were able to be accurately predicted as well. 
+This improved correlation increases the confidence in both the simulation and numerical results even though previous discrepancies were observed. 
+% KDB: This is just a bad statement. Sorry mate.
+% The agreement between the numerical and experimental heat flux data is very satisfactory. 
+
 
 %
 %LP_HI_LF
@@ -654,19 +660,16 @@ This improvement is specially visible in Line A, where the experimental data poi
 \label{fig:HeatFluxLPHILF}
 \end{figure} 
 
-The agreement between the numerical and experimental heat flux data is very satisfactory. 
-Not only the location of the heat flux peaks is well captured, but also the heat flux value is accurately predicted. 
 
-% % % % % %
-% % % % % % % 
- 
+%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Lower fin position, Low injection pressure}
  
-The Lower fin Low injection case, low fin position heat flux data is presented in Fig.~\ref{fig:HeatFluxLPLILF}.
-Again, thanks to the fin shock sitting further form the measurement region, the effect of the `numerical overestimation zone' is reduced compared to the high fin position case with Low injection pressure. 
-Nonetheless, the accuracy of the numerical results is slightly lower than in the equivalent case with high injection pressure.
-As for the Upper fin cases, this is due to the lower effect of the injection bow shock on heat flux.
-This makes the tendency to overestimate heat flux near the fin in the numerical results more visible. 
+The LI-LF heat flux data is presented in Fig.~\ref{fig:HeatFluxLPLILF}.
+Again, thanks to the fin shock sitting further away from the measurement region, the effect of the `numerical overestimation zone' is reduced when compared to the LI-HF case.
+Even still, the accuracy of the numerical method is lower than for the equivalent fin position with the higher injection rate (HI-LF).
+% than in the equivalent case with high injection pressure.
+Similar to the difference shown for the UF cases, this decrease in the accuracy is caused by the reduced effect of the injection bow shock on the measured heat flux values.
+% This makes the tendency to overestimate heat flux near the fin in the numerical results more visible. 
 
 %
 \begin{figure}[!h]

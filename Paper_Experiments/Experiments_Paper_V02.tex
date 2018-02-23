@@ -528,29 +528,27 @@ What this region suggests is that the turbulence model is overpredicting the lev
 
 
 This discrepancy created by the numerical solver being unable to accurately simulate the heat flux near the fin shock is a key aspect to take into account when comparing the numerical and experimental data from the fueled results. 
-This region of heat flux overestimation will be referred to as the `numerical overestimation zone'.
-
-\textbf{KB up to here}
+This region of overestimation will be referred to as the `numerical overestimation zone'.
 
 
 %%%%%%%%%%%%%%%%%%%%
 \subsection{Fuel vortex interaction}
 
-The results obtained for the tests using the Upper and Lower fin positions in combination with the high and low injection pressures (cases 1-4 in Table~\ref{tab:T4_Test_Cases}) provide data on the complex vortex-injection interaction flow field.
+The results obtained for the tests using the UF and LF positions in combination with the high and low injection pressures (cases 1-4 in Table~\ref{tab:T4_Test_Cases}) provide some initial data on the complex vortex-injection interaction flowfield.
 
 
 \subsubsection{Upper fin position, High injection pressure}
 
-Both the experimental and numerical results for the high injection pressure and upper fin are presented in Fig.~\ref{fig:HeatFluxLPHIUF}.
-Qualitatively, very good agreement between the numerical and experimental results is achieved.
-The general shape of the curves is well matched.
-The location of the heat flux peaks induced by the injection bow shock is very accurately retrieved numerically.
-Moreover, the similarity between numerical and experimental heat flux values is very satisfactory except in the region closest to the fin shock (low Y values).
-Near the fin shock, the numerical heat flux shows an important overestimation.
-This is caused by the presence of the `numerical overestimation zone' previously described. 
-As seen in Fig.~\ref{fig:SSTk_Q_Combi}, the turbulent kinetic energy adjacent to the flat plate wall, near the fin shock, tends to be overestimated.
-This not only affects the regions unaffected by the injection bow shock, but also contributes to increase the value of the peaks within this region, as can be seen in Line A. 
-
+Both the experimental and numerical results for the high injection pressure UF case are presented in Fig.~\ref{fig:HeatFluxLPHIUF}.
+Qualitatively, there is a good agreement between the numerical and experimental results away from the fin wall.
+The two curves have similar trends, and the heat flux peak induced by the injection bow shock was able to be simulated numerically.
+However, the numerical heat flux values near the fin (low Y values) are again overestimated when compared compared to the experimental results.
+% Moreover, the similarity between the numerical and experimental heat flux values is very satisfactory except in the region closest to the fin shock (low Y values).
+% Near the fin shock, the numerical heat flux shows an important overestimation.
+Again, this is caused by the presence of the `numerical overestimation zone' previously outlined for the no injection case.
+% KDB: I removed this as it just seems to be repeating yourself. By all means put it back in if I missed something.
+% As seen in Fig.~\ref{fig:SSTk_Q_Combi}, the turbulent kinetic energy adjacent to the flat plate wall, near the fin shock, tends to be overestimated.
+% This not only affects the regions unaffected by the injection bow shock, but also contributes to increase the value of the peaks within this region, as can be seen in Line A. 
 
 %
 %LP_HI_UF
@@ -583,21 +581,23 @@ This not only affects the regions unaffected by the injection bow shock, but als
 
 \subsubsection{Flowfield description from numerical data}
 
-The heat flux distribution on the flat plate present an interesting feature consisting of a stripe of high heat flux approximately in the center of the vortex.
-This regions extends from shortly downstream of the injection bow shock up to the end of the measurement region.
-This feature is difficult to visualize in the curves in Fig.~\ref{fig:HeatFluxLPHIUF}, but it is apparent in the heat flux maps in Fig.~\ref{fig:HeatFluxMap}.
-This high heat flux stripe is coupled with a neighboring low heat flux stripe, both highlighted in Fig.~\ref{fig:Exper_Flowf}. Fig.~\ref{fig:Exper_Flowf} presents the numerical data showing the vortex-injection interaction flowfield. 
+The numerical solution presents an interesting heat flux distribution on the flat plate consisting of a strip of elevated levels running approximately longitudinally down the center of the vortex.
+This regions extends from shortly downstream of the injection bow shock up to the end of the experimental measurements.
+This feature is difficult to visualize in Fig.~\ref{fig:HeatFluxLPHIUF}, but is apparent in the heat flux maps shown in Fig.~\ref{fig:HeatFluxMap}.
+This elevated strip is coupled with a neighboring decreased heat flux strip, both highlighted in Fig.~\ref{fig:Exper_Flowf}.
+Where Fig.~\ref{fig:Exper_Flowf} presents the three-dimensional numerical data showing the vortex-injection interaction. 
 
 
-Fig.~\ref{fig:Exper_Flowf}a shows the evolution of the flow from upstream of the injector, to far downstream.
-The fuel plume evolves from a nearly hemispheric, to a highly elongated profile.
+Shown in Fig.~\ref{fig:Exper_Flowf}a is the evolution of the flow upstream of the injector, to far downstream the plate.
+The fuel plume begins being nearly hemispheric and evolves to a highly elongated profile as you traverse downstream. 
 Far downstream, the fuel plume splits in two regions, one located within the vortex recirculation region, and the other adjacent to the flat plate.
-The region of interest is presented in more detail in Fig.~\ref{fig:Exper_Flowf}b.
-In this figure, the streak lines on the flat plate surface show the high and low heat flux stripes are coincident with a separation and a reattachment of the flow.
-The separation and reattachment lines are linked to the existence of a counter rotating vortex in this region.
-This vortex is shown in Fig.~\ref{fig:Exper_Flowf}c, marked as `C.R. vortex'.
+This region of interest is presented in more detail in Fig.~\ref{fig:Exper_Flowf}b.
+In this figure, the streak lines on the flat plate surface show the elevated and decreased heat flux strips are coincident with the separation and reattachment of the flow.
+These two stream lines (separation and reattachment) are linked to a counter rotating vortex shown in in Fig.~\ref{fig:Exper_Flowf}c, marked as `C.R. vortex'.
+% This vortex is shown in Fig.~\ref{fig:Exper_Flowf}c, marked as `C.R. vortex'.
 
 
+% KDB: You need axes on this or flow direction or something, it's hard to figure out what the reattchement pciture is tryign to show or where the vortex cross section ceomss from. I like this figure but just needs that last little bit. 
 \begin{figure}[!h]
 \center
 \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.95\columnwidth,valign=t]{Figures/Flowfield_Experimental_Vred.pdf}
@@ -606,7 +606,7 @@ This vortex is shown in Fig.~\ref{fig:Exper_Flowf}c, marked as `C.R. vortex'.
 \end{figure} 
 
 
-Despite the localized region of heat flux overprediction previously observed, the ability of the numerical methodology to accurately predict the location and extent of the counter-rotating vortex within the main separation vortex indicates the 3-D flowfield is very accurately predicted.
+Despite the previously heat flux overestimation (shown for the NI case), the ability of the numerical methodology to accurately predict the location and extent of the counter-rotating vortex within the main separation vortex indicates that the macro structures of the 3D flowfield were able to be correctly modeled.
 
 
 \subsubsection{Upper fin position, Low injection pressure}

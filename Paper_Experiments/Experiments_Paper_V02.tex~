@@ -72,20 +72,21 @@ Nonetheless, a good agreement was seen overall between the numerical and experim
  \section*{Nomenclature}
 % (Nomenclature entries should have the units identified)\\
  \noindent\begin{tabular}{@{}lcl@{}}
- \textit{A}  &=& amplitude of oscillation \\
-% \textit{a   }&=&    cylinder diameter \\
-% \textit{C}$_{p}$&=& pressure coefficient \\
-% \textit{Cx} &=& force coefficient in the \textit{x} direction \\
-% \textit{Cy} &=& force coefficient in the \textit{y} direction \\
-% c   &=& chord \\
-% d\textit{t} &=& time step \\
-% \textit{Fx} &=& \textit{X} component of the resultant pressure force acting on the vehicle \\
-% \textit{Fy} &=& \textit{Y} component of the resultant pressure force acting on the vehicle \\
-% \textit{f, g}   &=& generic functions \\
-% \textit{h}  &=& height \\
-% \textit{i}  &=& time index during navigation \\
-% \textit{j}  &=& waypoint index \\
-% \textit{K}  &=& trailing-edge (TE) nondimensional angular deflection rate
+\textit{$\diameter$}  &=& Diameter $[\SI{}{\milli\meter}]$\\
+\textit{$\alpha_{fin}$}  &=& Fin angle $[\SI{}{\deg}]$\\
+\textit{$\alpha_R$}  &=& TFHG sensitivity $[\SI{}{\per\kelvin}]$\\
+\textit{$\delta$}  &=& Boundary layer thickness $[\SI{}{\milli\meter}]$ \\
+\textit{$\rho$}  &=& Density $[\SI{}{\kilo\gram\per\cubic\meter}]$\\
+\textit{$c$}  &=& Thermal capacity $[\SI{}{\joule\per\kilo\gram\kelvin}]$ \\
+\textit{$H$}  &=& Enthalpy $[\SI{}{\mega\joule\per\kilo\gram}]$\\
+\textit{$k_T$}  &=& Thermal conductivity $[\SI{}{\watt\per\meter\kelvin}]$ \\
+\textit{M}  &=& Mach number $[-]$\\
+\textit{$P$}  &=& Pressure $[\SI{}{\pascal}]$\\
+\textit{$q,\,Q$}  &=& Heat flux $[\SI{}{\kilo/watt/per/square/meter}]$\\
+\textit{$t$}  &=& Time $[\SI{}{\second}]$\\
+\textit{$T$}  &=& Temperature $[\SI{}{\kelvin}]$\\
+\textit{$u$}  &=& Velocity $[\SI{}{\meter\per\second}]$ \\
+\textit{$V$}  &=& Voltage $[\SI{}{\volt}]$ \\
  \end{tabular} \\
 
 
@@ -577,88 +578,104 @@ This increased correlation suggests the that the numerical methodology was able 
 
 \begin{thebibliography}{}
 
-\bibitem{Wise2014b}
-Wise, D. J., \& Smart, M. K. (2014). Roughness-Induced Transition of Hypervelocity Boundary Layers. Journal of Spacecraft and Rockets, 51(3), 847–854. https://doi.org/10.2514/1.A32674
+%1
+\bibitem{SmartTetlow}
+Smart, M.~K. \& Tetlow, M.~R., {\it Orbital delivery of small payloads using hypersonic airbreathing propulsion}, J. Spacecraft Rockets, {\bf 46, No.1}, 2009, 117-125.
 
+%2
+\bibitem{CookHueter}
+Cook, S. \& Hueter, U., {\it NASA's integrated space transportation plan 3rd generation reusable launch vehicle technology update}, Acta Astronautica, 53, 2003, 719-728.
 
-\bibitem{Hunt2009}
-Hunt, D. C., Paull, A., Boyce, R. R., \& Hagenmaier, M. (2009). Investigation of an Axisymmetric Scramjet Configuration Utilising Inlet Injection and Radical Farming. In 19th International Symposium on Airbreathing Engines (ISABE2009).
+%3
+\bibitem{Alvi}
+Alvi, F.~S. \& Settles, G.~S., {\it Physical model of the swept shock wave/boundary-layer interaction flowfield}, AIAA Journal, 30, No.9, 1992, 2252-2258.
 
+%4
+\bibitem{SpacePlanes_paper2015}
+Llobet, J.~R., Jahn, I.~H. \& Gollan, R.~J., {\it Effect of stream-wise Vortices on Scramjets Porthole Injection Mixing}, Proceedings for the 20th AIAA International Space Planes and Hypersonic Systems and Technologies Conference, Glasgow, 2015. 
 
-\bibitem{Itoh1999}
-Itoh, K., Ueda, S., Komuro, T., Sato, K., Tanno, H., \& Takahashi, M. (1999). Hypervelocity aerothermodynamic and propulsion research using a high enthalpy shock tunnel HIEST. In 9th International Space Planes and Hypersonic Systems and Technologies Conference.
+%5
+\bibitem{Llobet_PlumeElongation}
+Llobet, J.~R., Gollan, R.~J., \& Jahn, I.~H., {\it Scramjet inlet vortices: its effect on fuel plume elongation and mixing rate}, publication pending.
 
+%6
+\bibitem{AFMCpaper2014}
+Llobet, J.~R., Barth, J.~E. \& Jahn, I.~H., {\it Vortex Tracking Algorithm for Hypersonic Flow in Scramjets}, 19th AFMC, 8-11 December, Melbourne 2014. Submitted for publication.
 
-\bibitem{Stalker_2005}
-Stalker, R. J., Paull, A., Mee, D. J., Morgan, R. G., \& Jacobs, P. A. (2005). Scramjets and shock tunnels -The Queensland experience. Progress in Aerospace Sciences, 41, 471–513.
-
-
-\bibitem{RidingsAndrewNoel2015Iops}
-Ridings, A. N. (2015). Investigation of pre-combustion shock trains in a scramjet using a shock tunnel at Mach 8 flight conditions. The University of Queensland, School of Mechanical and Mining Engineering.
-
-
-\bibitem{Chan:Boundary_Layer_Combustion_Perturbation}
-Khang, W. C. Y. (2012). Effects of flow non-uniformities on the drag reduction by boundary layer combustion, (August).
-
-
+%7
 \bibitem{Doherty:PhD_Thesis_Scram_M10}
 Doherty, L. J. (2013). Experimental Investigation of an Airframe Integrated 3-D Scramjet at a Mach 10 Flight Condition. University of Queensland.
 
+%8
+\bibitem{Stalker1966}
+Stalker, R~.J., {\it The Free-Pison Shock Tube}, The Aeronautical Quarterly, 1966, 351-370.
 
-\bibitem{Kirchhartz:PhD_Thesis_Boundary_Combustion}
-Kirchhartz, R. M. (2009). Upstream Wall Layer Effects on Drag Reduction with Boundary Layer Combustion. University of Queensland.
-
-
+%9
 \bibitem{Tanimizu:Phd_Thesis}
 Tanimizu, K. (2008). Nozzle Optimization Study and Measurements for a Quasi-Axisymmetric Scramjet Model. University of Queensland.
 
+%10
+\bibitem{Kirchhartz:PhD_Thesis_Boundary_Combustion}
+Kirchhartz, R. M. (2009). Upstream Wall Layer Effects on Drag Reduction with Boundary Layer Combustion. University of Queensland.
+
+%11
+\bibitem{RidingsAndrewNoel2015Iops}
+Ridings, A. N. (2015). Investigation of pre-combustion shock trains in a scramjet using a shock tunnel at Mach 8 flight conditions. The University of Queensland, School of Mechanical and Mining Engineering.
+
+%12
+\bibitem{Chan:Boundary_Layer_Combustion_Perturbation}
+Khang, W. C. Y. (2012). Effects of flow non-uniformities on the drag reduction by boundary layer combustion, (August).
+
+%13
+\bibitem{Wise_Thesis}
+Wise, D., {\it Experimental Investigation of a 3D Scramjet Engine at Hypervelocity Conditions}, PhD thesis, The University of Queensland, 2014.
+
+%14
+\bibitem{Stalker_2005}
+Stalker, R. J., Paull, A., Mee, D. J., Morgan, R. G., \& Jacobs, P. A. (2005). Scramjets and shock tunnels -The Queensland experience. Progress in Aerospace Sciences, 41, 471–513.
+
+%15
+\bibitem{Itoh1999}
+Itoh, K., Ueda, S., Komuro, T., Sato, K., Tanno, H., \& Takahashi, M. (1999). Hypervelocity aerothermodynamic and propulsion research using a high enthalpy shock tunnel HIEST. In 9th International Space Planes and Hypersonic Systems and Technologies Conference.
+
+%16
+\bibitem{Wise2014b}
+Wise, D. J., \& Smart, M. K. (2014). Roughness-Induced Transition of Hypervelocity Boundary Layers. Journal of Spacecraft and Rockets, 51(3), 847–854. https://doi.org/10.2514/1.A32674
+
+%17
+\bibitem{Hunt2009}
+Hunt, D. C., Paull, A., Boyce, R. R., \& Hagenmaier, M. (2009). Investigation of an Axisymmetric Scramjet Configuration Utilising Inlet Injection and Radical Farming. In 19th International Symposium on Airbreathing Engines (ISABE2009).
+
+%18
+\bibitem{JSASS_paper}
+Llobet, J.~R., Jahn, I.~H. \& Gollan, R.~J., {\it Effect of vortex-injection interaction on wall heat transfer in a flat plate with fin corner geometry}, Trans. JSASS Aerospace Tech. Japan, Vol.15, No.APISAT-2016, 2017, a17-a26. 
+
+%19
+\bibitem{Schultz_Book}
+Schultz, D. \& Jones, T., {\it Heat-Transfer Measurements in Short-Duration Hypersonic Facilities}, AGARD-AG-165, North Atlantic Treaty Organization Advisory Group for Aerospace Research and Development, 1973.
+
+%20
+\bibitem{nenzfr_manual}
+Doherty, L., Zander, F. , Jacobs, P., Gollan, R., Chan, W., \& Kirchhartz, R., {\it NENZF-r: Non-Equilibrium Nozzle Flow, Reloaded. A User Guide.}, Mechanical Engineering Report 2012/08, The University of Queensland School of Mechanical and Mining Engineering, 2012.
+
+%21
+\bibitem{Eilmer_TheoryBook}
+P.~A. Jacobs, R.~J. Gollan, A.~J. Denman, B.~T. O'Flaherty, D.~F. Potter, P.~J. Petrie-Repar, \& I.~A. Johnston., {\it Eilmer's Theory Book: Basic Models for Gas Dynamics and Thermochemistry.}, Mechanical Engineering Report 2010/09, The University of Queensland School of Mechanical and Mining Engineering, 2010.
+
+%22
+\bibitem{Eilmer3UserGuide}
+P.~A. Jacobs, \& R.~J. Gollan., {\it The Eilmer3 Code: User Guide and Example Book.}, Mechanical Engineering Report 2008/07, The University of Queensland School of Mechanical and Mining Engineering, 2009.
+
+%23
+\bibitem{CEA2}
+McBride, B.~J., \& Gordon, S., {\it Computer program for calculation of complex chemical equilibrium	compositions and applications. Part 2: User manual and program description.}, Reference Publication 1311, NASA, 1996.
+
+%24
 \bibitem{He_Morgan}
 He, Y. \& Morgan, R.~G., {\it Transition of compressible high enthalpy boundary layer
 flow over a flat plate}, 10th Australasian Fluid Mechanics Conf, Univ of Melb, paper
 11B-2, 11-15 December, 1989.
 
-%1
-\bibitem{SmartTetlow}
-Smart, M.~K. \& Tetlow, M.~R., {\it Orbital delivery of small payloads using hypersonic airbreathing propulsion}, J. Spacecraft Rockets, {\bf 46, No.1}, 2009, 117-125.
-%2
-\bibitem{CookHueter}
-Cook, S. \& Hueter, U., {\it NASA's integrated space transportation plan 3rd generation reusable launch vehicle technology update}, Acta Astronautica, 53, 2003, 719-728.
-%3
-\bibitem{Alvi}
-Alvi, F.~S. \& Settles, G.~S., {\it Physical model of the swept shock wave/boundary-layer interaction flowfield}, AIAA Journal, 30, No.9, 1992, 2252-2258.
-%4
-\bibitem{Llobet_PlumeElongation}
-Llobet, J.~R., Gollan, R.~J., \& Jahn, I.~H., {\it Scramjet inlet vortices: its effect on fuel plume elongation and mixing rate}, publication pending.
-%5
-\bibitem{SpacePlanes_paper2015}
-Llobet, J.~R., Jahn, I.~H. \& Gollan, R.~J., {\it Effect of stream-wise Vortices on Scramjets Porthole Injection Mixing}, Proceedings for the 20th AIAA International Space Planes and Hypersonic Systems and Technologies Conference, Glasgow, 2015. 
-%6
-\bibitem{Stalker1966}
-Stalker, R~.J., {\it The Free-Pison Shock Tube}, The Aeronautical Quarterly, 1966, 351-370.
-%7
-\bibitem{AFMCpaper2014}
-Llobet, J.~R., Barth, J.~E. \& Jahn, I.~H., {\it Vortex Tracking Algorithm for Hypersonic Flow in Scramjets}, 19th AFMC, 8-11 December, Melbourne 2014. Submitted for publication.
-%8
-\bibitem{JSASS_paper}
-Llobet, J.~R., Jahn, I.~H. \& Gollan, R.~J., {\it Effect of vortex-injection interaction on wall heat transfer in a flat plate with fin corner geometry}, Trans. JSASS Aerospace Tech. Japan, Vol.15, No.APISAT-2016, 2017, a17-a26. 
-%9
-\bibitem{Wise_Thesis}
-Wise, D., {\it Experimental Investigation of a 3D Scramjet Engine at Hypervelocity Conditions}, PhD thesis, The University of Queensland, 2014.
-%10
-\bibitem{Schultz_Book}
-Schultz, D. \& Jones, T., {\it Heat-Transfer Measurements in Short-Duration Hypersonic Facilities}, AGARD-AG-165, North Atlantic Treaty Organization Advisory Group for Aerospace Research and Development, 1973.
-%11
-\bibitem{nenzfr_manual}
-Doherty, L., Zander, F. , Jacobs, P., Gollan, R., Chan, W., \& Kirchhartz, R., {\it NENZF-r: Non-Equilibrium Nozzle Flow, Reloaded. A User Guide.}, Mechanical Engineering Report 2012/08, The University of Queensland School of Mechanical and Mining Engineering, 2012.
-%12
-\bibitem{Eilmer3UserGuide}
-P.~A. Jacobs, \& R.~J. Gollan., {\it The Eilmer3 Code: User Guide and Example Book.}, Mechanical Engineering Report 2008/07, The University of Queensland School of Mechanical and Mining Engineering, 2009.
-%13
-\bibitem{Eilmer_TheoryBook}
-P.~A. Jacobs, R.~J. Gollan, A.~J. Denman, B.~T. O'Flaherty, D.~F. Potter, P.~J. Petrie-Repar, \& I.~A. Johnston., {\it Eilmer's Theory Book: Basic Models for Gas Dynamics and Thermochemistry.}, Mechanical Engineering Report 2010/09, The University of Queensland School of Mechanical and Mining Engineering, 2010.
-%14
-\bibitem{CEA2}
-McBride, B.~J., \& Gordon, S., {\it Computer program for calculation of complex chemical equilibrium	compositions and applications. Part 2: User manual and program description.}, Reference Publication 1311, NASA, 1996.
 
 
 \end{thebibliography}

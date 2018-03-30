@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1519845469 "Experiments_Paper_V02.tex" "/home/basore/Documents/Experiments_Paper/Paper_Experiments/build/Experiments_Paper_V02.pdf" "Experiments_Paper_V02" 1519845470
+["pdflatex"] 1522444431 "Experiments_Paper_V02.tex" "/home/basore/Documents/Experiments_Paper/Paper_Experiments/build/Experiments_Paper_V02.pdf" "Experiments_Paper_V02" 1522444433
   "/etc/texmf/web2c/texmf.cnf" 1516931323 1101 af7716885e081ab43982cab7b4672c1a ""
-  "/home/basore/Documents/Experiments_Paper/Paper_Experiments/build/Experiments_Paper_V02.aux" 1519845470 10720 dbd60542dbd762884f0eab7abf6df2ab ""
+  "/home/basore/Documents/Experiments_Paper/Paper_Experiments/build/Experiments_Paper_V02.aux" 1522444433 10691 9fe83371b2a940ff37269dc183428536 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx0900.tfm" 1136768653 3584 1a7de6c99457381c64abc1a7c545505f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -202,7 +202,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1516931479 1863403 f3ff9a4253bcb5fb9a9baaf0c572cb01 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1516931499 3854005 1e24e5a53888279e4bc1a73daea7ec02 ""
   "AIAA.cls" 1518043750 25804 21fe69a36332b02d2c1b33356d26ceb9 ""
-  "Experiments_Paper_V02.tex" 1519845469 44674 fdd056a00f5640b8bdc6839a64db5f03 ""
+  "Experiments_Paper_V02.tex" 1522444431 50627 b16aefedca5d264b22fa9204660ac970 ""
   "Figures/AlviSettles_FlowStructure_V5.pdf" 1518477398 60092 b250f96ff964a98a44851e61a1455b80 ""
   "Figures/Data/LP_HI_LF/GNUP_CFD_GaugesLines_Multi.pdf" 1518043750 22740 b4e19a1977865f1be12ce00724f3fdc2 ""
   "Figures/Data/LP_HI_UF/GNUP_CFD_GaugesLines_Multi.pdf" 1518043750 22913 5287425caf61ca2770afb0f23b65a118 ""
@@ -222,11 +222,11 @@
   "Figures/SST-K_X137_LP_NI_UF_Q_and_SSTk_Combined.pdf" 1518043750 386501 1decb3a6fd5d4f330ac60eda69b172b9 ""
   "Figures/T4_Shock_Tunnel_Luke_D_2013.eps" 1518218512 1160495 a8089f354d7e4d5c32aec97e1a78ecdc ""
   "Figures/TurbKinEnergySlices_csH2Stoich_LowP_LowF_HighInj_fmt_V2.pdf" 1518043750 294225 328b3ea2b8681909c4dc8c60be570228 ""
-  "build/Experiments_Paper_V02.aux" 1519845470 10720 dbd60542dbd762884f0eab7abf6df2ab ""
+  "build/Experiments_Paper_V02.aux" 1522444433 10691 9fe83371b2a940ff37269dc183428536 ""
   (generated)
-  "build/Experiments_Paper_V02.log"
-  "/home/basore/Documents/Experiments_Paper/Paper_Experiments/build/Experiments_Paper_V02.pdf"
-  "build/Experiments_Paper_V02.out"
   "build/Experiments_Paper_V02.pdf"
-  "build/Experiments_Paper_V02.aux"
+  "build/Experiments_Paper_V02.out"
+  "/home/basore/Documents/Experiments_Paper/Paper_Experiments/build/Experiments_Paper_V02.pdf"
   "/home/basore/Documents/Experiments_Paper/Paper_Experiments/build/Experiments_Paper_V02.log"
+  "build/Experiments_Paper_V02.aux"
+  "build/Experiments_Paper_V02.log"
